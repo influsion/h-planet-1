@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.936" height="14.776" viewBox="0 0 16.936 14.776">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#444f5e}
+        </style>
+    </defs>
+    <g id="prefix__bathtub_copy" data-name="bathtub copy" transform="translate(101.15 -8.265)">
+        <path id="prefix__Path_184" d="M16.783 119.405a.6.6 0 0 0-.45-.205H.6a.6.6 0 0 0-.593.678L1 126.762a.6.6 0 0 0 .593.513h.387v.387a.6.6 0 1 0 1.2 0v-.387h10.6v.387a.6.6 0 1 0 1.2 0v-.387h.387a.6.6 0 0 0 .593-.513l.986-6.884a.682.682 0 0 0-.163-.473z" class="prefix__cls-1" data-name="Path 184" transform="translate(-101.157 -105.22)"/>
+        <path id="prefix__Path_185" d="M19.691 23.06a.6.6 0 0 0-.843 0l-.262.262v-2.194a1.037 1.037 0 1 1 2.074 0 .6.6 0 1 0 1.2 0 2.228 2.228 0 1 0-4.456 0v2.559a.21.21 0 0 0 .211.211H19.6a.227.227 0 0 0 .182-.1.614.614 0 0 0-.091-.738z" class="prefix__cls-1" data-name="Path 185" transform="translate(-117.559 -10.635)"/>
+    </g>
+</svg>

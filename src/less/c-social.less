@@ -1,0 +1,122 @@
+/* .c-social
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-social';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+
+        @media (min-width: 1152px) {
+            flex-grow: 0;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 50px;
+            position: relative;
+
+            .icon {
+                z-index: 2;
+                font-size: 16px;
+                color: @white;
+                position: relative;
+            }
+
+            &:after {
+                left: 0;
+                top: -1px;
+                right: -1px;
+                bottom: -1px;
+                content: '';
+                position: absolute;
+                border: 1px solid #494a6a;
+            }
+
+            &:last-child:after {
+                right: 0;
+            }
+
+            &:before {
+                top: 0;
+                bottom: 0;
+                left: -1px;
+                right: -1px;
+                z-index: 1;
+                content: '';
+                position: absolute;
+                transform: translateY(100%);
+                transition: transform .3s;
+            }
+
+            &--twitter:before {
+                background-color: #41abe1;
+            }
+
+            &--google:before {
+                background-color: #d55a4d;
+            }
+
+            &--linkedin:before {
+                background-color: #0d7cb7;
+            }
+
+            &--facebook:before {
+                background-color: #4e6da2;
+            }
+
+            &--instagram:before {
+                background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            }
+
+            &:hover:before  {
+                transform: translateY(0);
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+    .c-guide @{r},
+    .c-menu__wrap @{r} {
+        flex: none;
+        justify-content: flex-start;
+        padding-top: 40px;
+        border-top: 1px solid @gray-light;
+
+        @media (min-width: 1152px) {
+            display: none;
+        }
+
+        @{r}__link {
+            align-items: flex-end;
+            width: auto;
+            height: auto;
+            margin-right: 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .icon {
+                color: @gray-dark;
+                font-size: 18px;
+            }
+
+            &:after,
+            &:before {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__warning" width="59" height="58.46" viewBox="0 0 59 58.46">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#cbd2df}
+        </style>
+    </defs>
+    <ellipse id="prefix__Эллипс_1865" cx="29.5" cy="29.23" data-name="Эллипс 1865" rx="29.5" ry="29.23" style="fill:#fff"/>
+    <g id="prefix__risk" transform="translate(7 10.13)">
+        <g id="prefix__Group_85" data-name="Group 85">
+            <g id="prefix__Group_84" data-name="Group 84">
+                <path id="prefix__Path_309" d="M36.7 0H6.587A6.6 6.6 0 0 0 0 6.587v20.7a6.6 6.6 0 0 0 6.587 6.587H26.9l9.134 9.136a.948.948 0 0 0 .666.275.963.963 0 0 0 .36-.072.941.941 0 0 0 .582-.87v-8.531a6.6 6.6 0 0 0 5.646-6.521V6.587A6.6 6.6 0 0 0 36.7 0zm4.7 27.29A4.711 4.711 0 0 1 36.7 32a.941.941 0 0 0-.942.941v7.139l-7.8-7.8a.948.948 0 0 0-.668-.28H6.587a4.711 4.711 0 0 1-4.7-4.71V6.587a4.711 4.711 0 0 1 4.705-4.7H36.7a4.711 4.711 0 0 1 4.7 4.705z" class="prefix__cls-2" data-name="Path 309"/>
+            </g>
+        </g>
+        <g id="prefix__Group_87" data-name="Group 87" transform="translate(18.821 22.585)">
+            <g id="prefix__Group_86" data-name="Group 86">
+                <path id="prefix__Path_310" d="M216.156 256a2.823 2.823 0 1 0 2.823 2.823 2.823 2.823 0 0 0-2.823-2.823zm0 3.764a.941.941 0 1 1 .941-.941.941.941 0 0 1-.941.941z" class="prefix__cls-2" data-name="Path 310" transform="translate(-213.333 -256)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_89" data-name="Group 89" transform="translate(17.881 5.646)">
+            <g id="prefix__Group_88" data-name="Group 88">
+                <path id="prefix__Path_311" d="M209.445 64.9a2.832 2.832 0 0 0-2.067-.9H205.5a2.827 2.827 0 0 0-2.816 3.038l.8 9.273a2.961 2.961 0 0 0 5.906.015l.811-9.3a2.827 2.827 0 0 0-.756-2.126zm-1.125 1.976l-.813 9.3a1.08 1.08 0 0 1-2.155-.015l-.794-9.273a.928.928 0 0 1 .25-.71.938.938 0 0 1 .689-.3h1.882a.938.938 0 0 1 .689.3.923.923 0 0 1 .252.698z" class="prefix__cls-2" data-name="Path 311" transform="translate(-202.674 -64)"/>
+            </g>
+        </g>
+    </g>
+</svg>

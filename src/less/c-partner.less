@@ -1,0 +1,81 @@
+/* .c-partner
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-partner';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        border-top: 1px solid @gray-light;
+        border-bottom: 1px solid @gray-light;
+        display: none;
+
+        @media (min-width: 1152px) {
+            display: block;
+        }
+
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            transition: all .3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            .icon {
+                font-size: 20px;
+
+                &--kiwi {
+                    font-size: 36px;
+                    width: unit(202.6 / 100, em);
+                }
+
+                &--viator {
+                    font-size: 22px;
+                    width: unit(333 / 100, em);
+                }
+
+                &--tripadvisor {
+                    width: unit(607.9 / 100, em);
+                }
+
+                &--agoda {
+                    font-size: 26px;
+                    width: unit(248.7 / 100, em);
+                }
+
+                &--booking {
+                    font-size: 18px;
+                    width: unit(601.2/ 100, em);
+                }
+
+                &--priceline {
+                    width: unit(424.8 / 100, em);
+                }
+
+                &--rentalcars {
+                    font-size: 16px;
+                    width: unit(755.6 / 100, em);
+                }
+
+                &--world-nomads {
+                    font-size: 22px;
+                    width: unit(544.4 / 100, em);
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

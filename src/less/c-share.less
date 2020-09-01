@@ -1,0 +1,53 @@
+/* .c-share
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-share';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+
+        &__link {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            position: relative;
+
+            &:before {
+                bottom: 0;
+                left: -10px;
+                right: -10px;
+                content: '';
+                height: 1px;
+                position: absolute;
+                background-color: #eaedf2;
+            }
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 50px;
+            
+            img {
+                width: auto;
+            }  
+        }
+
+        &__text {
+            color: @black;
+            font-size: 16px;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

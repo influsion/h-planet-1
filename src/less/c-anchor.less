@@ -1,0 +1,48 @@
+/* .c-anchor
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-anchor';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        &__item {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 36px;
+            font-size: 12px;
+            padding: 0 16px;
+            cursor: pointer;
+            line-height: 1.2;
+            text-align: center;
+            border: 1px solid rgba(210, 215, 223, 0.69);
+            border-right: 0;
+            transition: .3s;
+
+            &:first-child {
+                border-top-left-radius: 3px;
+                border-bottom-left-radius: 3px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 3px;
+                border-bottom-right-radius: 3px;
+                border-right: 1px solid rgba(210, 215, 223, 0.69);
+            }
+
+            &:hover {
+                background-color: #f3f5f8;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

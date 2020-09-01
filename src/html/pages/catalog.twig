@@ -1,0 +1,356 @@
+{% extends '../layout.twig' %}
+
+{% block head_title %}Catalog | Planet of Hotels{% endblock %}
+
+{% block body_class %}l-body{% endblock %}
+
+{% block body %}
+
+{% include '../partials/l-header_bg.twig' %}
+
+
+<div class="l-container l-container--bg l-container--pt-10 l-container--pb-10 max-1151">
+  <form class="c-booking c-form">
+    <div class="c-booking__column c-booking__column--direction">
+      <div class="c-booking__panel">
+        <div class="c-booking__panel--title">
+          Укажите направление
+        </div>
+        <div class="c-booking__panel--close"></div>
+      </div>
+      <div class="c-booking__input">
+        <input type="text" placeholder="Укажите город или отель" required />
+        <svg class="icon icon--search">
+          <use xlink:href="images/_sprite.svg#icon--search"></use>
+        </svg>
+        <div class="c-booking__input--clear"></div>
+      </div>
+      <div class="c-booking__dropdown">
+        <div class="c-booking__dropdown--item">
+          <div class="c-booking__dropdown--icon">
+            <svg class="icon icon--pin">
+              <use xlink:href="images/_sprite.svg#icon--pin"></use>
+            </svg>
+          </div>
+          <div class="c-booking__dropdown--info">
+            <div class="c-booking__dropdown--location">
+              Италия
+            </div>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item">
+          <div class="c-booking__dropdown--icon">
+            <svg class="icon icon--pin">
+              <use xlink:href="images/_sprite.svg#icon--pin"></use>
+            </svg>
+          </div>
+          <div class="c-booking__dropdown--info">
+            <div class="c-booking__dropdown--location">
+              Итальянская Ривьера
+            </div>
+            <div class="c-booking__dropdown--region">
+              Регион - Италия
+            </div>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item">
+          <div class="c-booking__dropdown--icon">
+            <svg class="icon icon--plane">
+              <use xlink:href="images/_sprite.svg#icon--plane"></use>
+            </svg>
+          </div>
+          <div class="c-booking__dropdown--info">
+            <div class="c-booking__dropdown--location">
+              Аэропорт Рим
+            </div>
+            <div class="c-booking__dropdown--region">
+              Город - Лацио, Италия
+            </div>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item">
+          <div class="c-booking__dropdown--icon">
+            <svg class="icon icon--bed-2">
+              <use xlink:href="images/_sprite.svg#icon--bed-2"></use>
+            </svg>
+          </div>
+          <div class="c-booking__dropdown--info">
+            <div class="c-booking__dropdown--location">
+              Intercontinental Rome
+            </div>
+            <div class="c-booking__dropdown--region">
+              Регион - Италия
+            </div>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item">
+          <div class="c-booking__dropdown--icon">
+            <svg class="icon icon--monastery">
+              <use xlink:href="images/_sprite.svg#icon--monastery"></use>
+            </svg>
+          </div>
+          <div class="c-booking__dropdown--info">
+            <div class="c-booking__dropdown--location">
+              Колизей
+            </div>
+            <div class="c-booking__dropdown--region">
+              Регион - Италия
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="c-booking__column">
+      <div class="c-booking__panel">
+        <div class="c-booking__panel--title">
+          Укажите дату заезда
+        </div>
+        <div class="c-booking__panel--close"></div>
+      </div>
+      <div class="c-booking__input">
+        <input type="text" placeholder="Дек 24 - Янв 2 (3 ночи)" required />
+        <svg class="icon icon--calendar">
+          <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="c-booking__column c-booking__column--people">
+      <div class="c-booking__panel">
+        <div class="c-booking__panel--title">
+          Укажите к-во взрослых/детей
+        </div>
+        <div class="c-booking__panel--close"></div>
+      </div>
+      <div class="c-booking__input">
+        <div class="c-booking__input--column">
+          <span id="c-booking__count--adult">2</span> взрослых
+        </div>
+        <div class="c-booking__input--column">
+          <span id="c-booking__count--children">0</span> детей
+        </div>
+        <div class="c-booking__input--column">
+          <span id="c-booking__count--room">1</span> номер
+        </div>
+        <svg class="icon icon--user">
+          <use xlink:href="images/_sprite.svg#icon--user"></use>
+        </svg>
+      </div>
+      <div class="c-booking__dropdown" id="c-booking__count">
+        <div class="c-booking__dropdown--item c-booking--no-pointer">
+          <div class="c-booking__dropdown--title">
+            Взрослых
+          </div>
+          <div class="c-booking__count">
+            <a class="c-booking__count--minus" href="#c-booking__count--adult"></a>
+            <div class="c-booking__count--value">2</div>
+            <a class="c-booking__count--plus" href="#c-booking__count--adult"></a>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item c-booking--no-pointer">
+          <div class="c-booking__dropdown--title">
+            Дети
+          </div>
+          <div class="c-booking__count">
+            <a class="c-booking__count--minus" href="#c-booking__count--children"></a>
+            <div class="c-booking__count--value">0</div>
+            <a class="c-booking__count--plus" href="#c-booking__count--children"></a>
+          </div>
+        </div>
+        <div class="c-booking__dropdown--item c-booking--no-pointer">
+          <div class="c-booking__dropdown--title">
+            Номера
+          </div>
+          <div class="c-booking__count">
+            <a class="c-booking__count--minus" href="#c-booking__count--room"></a>
+            <div class="c-booking__count--value">1</div>
+            <a class="c-booking__count--plus" href="#c-booking__count--room"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<main class="l-main">
+  <div class="l-container">
+    <div class="l-row min-1152">
+      <div class="c-crumb c-crumb--standart">
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Главная
+        </a>
+        <div class="c-crumb__separator"></div>
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Европа
+        </a>
+        <div class="c-crumb__separator"></div>
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Италия
+        </a>
+        <div class="c-crumb__separator"></div>
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Лацио
+        </a>
+        <div class="c-crumb__separator"></div>
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Рим
+        </a>
+        <div class="c-crumb__separator"></div>
+        <span class="c-crumb__link c-crumb__link--current">
+          Результаты поиска
+        </span>
+      </div>
+    </div>
+    <div class="l-row l-row--mt-20 l-row--max-1151-mt-0">
+      <div class="c-grid">
+        <div class="c-grid__left">
+          <form class="c-booking c-booking--vertical c-form">
+            <div class="c-booking__row">
+              <div class="c-booking__title">
+                Найти
+              </div>
+            </div>
+            <div class="c-booking__row">
+              <div class="c-booking__input" data-title="Место/название объекта:">
+                <input type="text" placeholder="Санкт-Петербург" required />
+                <svg class="icon icon--search">
+                  <use xlink:href="images/_sprite.svg#icon--search"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="c-booking__row">
+              <div class="c-booking__input" data-title="Дата заезда:">
+                <input type="text" placeholder="Среда, 18 декабря 2019" required />
+                <svg class="icon icon--calendar">
+                  <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="c-booking__row">
+              <div class="c-booking__input" data-title="Дата отъезда:">
+                <input type="text" placeholder="Среда, 18 декабря 2019" required />
+                <svg class="icon icon--calendar">
+                  <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="c-booking__row">
+              <div class="c-booking__input c-booking--pl-10 c-booking--pr-10" data-title="Номера для:">
+                <input type="text" placeholder="2 взрослых" required />
+              </div>
+            </div>
+            <div class="c-booking__row c-booking--mt-10">
+              <div class="c-booking__half">
+                <div class="c-booking__input c-booking--pl-10 c-booking--pr-10 c-booking--mr-10">
+                  <input type="text" placeholder="Без детей" required />
+                </div>
+              </div>
+              <div class="c-booking__half">
+                <div class="c-booking__input c-booking--pl-10 c-booking--pr-10">
+                  <input type="text" placeholder="1 номер" required />
+                </div>
+              </div>
+            </div>
+            <div class="c-booking__row c-booking--mt-10">
+              <button class="c-button c-button--blue" type="submit">
+                <span class="c-button__inner">
+                  Найти
+                </span>
+              </button>
+            </div>
+          </form>
+          {% include '../partials/c-filter.twig' %}
+        </div>
+        <div class="c-grid__right">
+          <div class="l-row l-row--min-1152-mt-0 max-1151">
+            <div class="c-sort">
+              <a class="c-sort__item" href="javascript:void(0)">
+                <svg class="icon icon--pin-empty">
+                  <use xlink:href="images/_sprite.svg#icon--pin-empty"></use>
+                </svg>
+                Карта
+              </a>
+              <a class="c-sort__item" href="#c-filter">
+                <svg class="icon icon--filter">
+                  <use xlink:href="images/_sprite.svg#icon--filter"></use>
+                </svg>
+                Фильтры
+              </a>
+              <a class="c-sort__item" href="javascript:void(0)">
+                <svg class="icon icon--sort">
+                  <use xlink:href="images/_sprite.svg#icon--sort"></use>
+                </svg>
+                Сортировать
+              </a>
+            </div>
+          </div>
+          <div class="l-row l-row--flex l-row--between l-row--mt-0 min-1152">
+            <div class="c-title c-title--fs-24 c-title--fw-600 c-title--left">
+              Отели Лондона: найден 3 391 вариант
+            </div>
+            <div class="c-select c-select--sort">
+              <div class="c-select__selected">
+                Сортировать по
+              </div>
+              <div class="c-select__dropdown">
+                <div class="c-select__scroll">
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-1
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-2
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-3
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-4
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-5
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-6
+                    </div>
+                  </div>
+                  <div class="c-select__item">
+                    <div class="c-select__item--title">
+                      Значение-7
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l-row l-row--mt-10">
+            <div class="c-line"></div>
+          </div>
+          <div class="l-row l-row--mt-20 l-row--max-1151-mt-10">
+            {% include '../partials/c-apply.twig' %}
+          </div>
+          <div class="l-row l-row--mt-20 l-row--max-1151-mt-10">
+            {% include '../partials/c-card--catalog.twig' %}
+          </div>
+          <div class="l-row l-row--mt-40">
+            {% include '../partials/c-pagination.twig' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include '../partials/l-footer.twig' %}
+
+{% endblock %}

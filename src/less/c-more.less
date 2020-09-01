@@ -1,0 +1,35 @@
+/* .c-more
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-more';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        color: @black;
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 2px;
+        background-color: #ffffff;
+
+        &:after {
+            width: 6px;
+            height: 6px;
+            content: '';
+            margin-left: 6px;
+            border-right: 1px solid;
+            border-bottom: 1px solid;
+            transform: rotate(45deg);
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

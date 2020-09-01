@@ -1,0 +1,65 @@
+/* .c-airlines
+---------------------------------------------------------------*/
+& {
+  @r: ~".c-airlines";
+
+  // base
+  //-----------------------------------------------------------
+  @{r} {
+    display: flex;
+    margin: auto;
+    max-width: 1000px;
+
+    @media (max-width: 1151px) {
+      overflow-x: auto;
+    }
+
+    &__column {
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 767px) {
+        width: 200px;
+        margin-right: 16px;
+      }
+
+      @media (min-width: 768px) {
+        margin-right: 40px;
+        .mixin-grid(5, 40px);
+      }
+    }
+
+    &__link {
+      color: inherit;
+      line-height: 30px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      @media (min-width: 768px) {
+        display: none;
+
+        &:nth-child(-n + 4) {
+          display: block;
+        }
+      }
+
+      &:hover {
+        color: @blue;
+        text-decoration: underline;
+      }
+    }
+
+    // modifier
+    //-------------------------------------------------------
+  }
+
+  // influence
+  //-----------------------------------------------------------
+  .c-show--active @{r}__link {
+    display: block;
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+}

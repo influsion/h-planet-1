@@ -1,0 +1,54 @@
+/* .l-header
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.l-header';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        flex: none;
+
+        @media (max-width: 1151px) {
+            position: relative;
+            background-color: @purple;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+        }
+
+        @media (min-width: 1152px) {
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            position: absolute;
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 1151px) {
+                height: @header-max-1151;
+                justify-content: space-between;
+            }
+
+            @media (min-width: 1152px) {
+                height: @header-min-1152;
+                border-bottom: 1px solid rgba(255,255,255,.23);
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--bg {
+            position: relative;
+            background-color: @purple;
+
+            @{r}__wrap {
+                height: 50px;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

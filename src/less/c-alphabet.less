@@ -1,0 +1,102 @@
+/* .c-alphabet
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-alphabet';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: 1152px) {
+            align-items: center;
+        }
+
+        &__nav {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+
+            @media (min-width: 1152px) {
+                justify-content: center;
+            }
+
+            &--link {
+                color: @black;
+                font-size: 18px;
+                padding-right: 14px;
+                text-transform: uppercase;
+                transition: .3s;
+
+                @media (min-width: 1152px) {
+                    padding-right: 20px;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:hover {
+                    color: @blue;
+                }
+            }
+
+            &--active {
+                color: @blue;
+                font-weight: 900;
+            }
+        }
+
+        &__content {
+            padding-top: 14px;
+
+            @media (min-width: 768px) {
+                padding-top: 20px;
+            }
+
+            &--item {
+                display: none;
+            }
+
+            &--active {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &--link {
+                display: block;
+                color: @black;
+                transition: .3s;
+
+                @media (max-width: 767px) {
+                    line-height: 2.2;
+                    margin-right: 10px;
+                    .mixin-grid(2, 10px);
+                }
+
+                @media (min-width: 768px) {
+                    line-height: 2.5;
+                    margin-right: 20px;
+                    .mixin-grid(4, 20px);
+                }
+
+                @media (min-width: 1152px) {
+                    font-size: 16px;
+                    white-space: normal;
+                }
+
+                &:hover {
+                    color: @blue;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

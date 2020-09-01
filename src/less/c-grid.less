@@ -1,0 +1,79 @@
+/* .c-grid
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-grid';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        @media (max-width: 1151px) {
+            flex-direction: column;
+        }
+
+        &__left {
+
+            @media (max-width: 1151px) {
+                left: -100%;
+                position: absolute;
+            }
+
+            @media (min-width: 1152px) {
+                width: 280px;
+            }
+
+            > * {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__right {
+
+            @media (min-width: 1152px) {
+                padding-left: 40px;
+                width: calc(~ '100% - 280px');
+            }
+        }
+
+        &__guest {
+            display: flex;
+
+            &--left {
+                width: calc(100% - 275px);
+                padding-right: 16px;
+            }
+
+            &--right {
+                width: 275px;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--hotel {
+
+            @{r}__left {
+
+                @media (min-width: 1152px) {
+                    width: 300px;
+                }
+            }
+
+            @{r}__right {
+
+                @media (min-width: 1152px) {
+                    padding-left: 24px;
+                    width: calc(~ '100% - 300px');
+                }
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

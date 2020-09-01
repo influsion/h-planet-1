@@ -1,0 +1,63 @@
+/* .c-company
+---------------------------------------------------------------*/
+& {
+  @r: ~".c-company";
+
+  // base
+  //-----------------------------------------------------------
+  @{r} {
+    display: flex;
+    align-items: center;
+    left: 50%;
+    width: 100vw;
+    position: relative;
+    transform: translateX(-50%);
+    background-color: #f4f9fd;
+
+    @media (max-width: 767px) {
+      height: 70px;
+      overflow-x: auto;
+      padding-left: 10px;
+
+      &:after {
+        content: '';
+        height: 100%;
+        min-width: 1px;
+        display: block;
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 146px;
+      overflow: hidden;
+    }
+
+    &__item {
+      flex: none;
+      display: flex;
+      margin-right: 24px;
+
+      &:last-child {
+        margin-right: 10px;
+      }
+
+      @media (min-width: 768px) {
+        margin: 0 50px;
+      }
+
+      img {
+        width: auto;
+
+        @media (max-width: 767px) {
+          max-height: 20px;
+        }
+      }
+    }
+
+    // modifier
+    //---------------------------------------------------------
+  }
+
+  // influence
+  //-----------------------------------------------------------
+}

@@ -1,0 +1,115 @@
+/* .c-ph
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-ph';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1150px;
+
+        &__column {
+
+            @media (max-width: 1151px) {
+                width: 100%;
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            @media (min-width: 1152px) {
+                margin-right: 90px;
+                .mixin-grid(2, 90px);
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+
+            @media (min-width: 1152px) {
+                font-size: 26px;
+            }
+        }
+
+        &__list {
+            margin-top: 10px;
+            border: solid 1px #d0dbea;
+
+            @media (min-width: 1152px) {
+                margin-top: 20px;
+            }
+
+            &--item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: @black;
+                padding: 10px;
+                min-height: 60px;
+                border-top: solid 1px #d0dbea;
+                transition: .3s;
+
+                @media (min-width: 1152px) {
+                    padding: 20px;
+                    min-height: 70px;
+                }
+
+                &:first-child {
+                    border-top: 0;
+                }
+
+                &:hover {
+                    background-color: #f3f5f8;
+
+                    @{r}__list--price {
+                        color: @blue;
+                    }
+                }
+            }
+
+            &--title {
+                font-size: 16px;
+                padding-right: 20px;
+
+                @media (min-width: 1152px) {
+                    font-size: 18px;
+                }
+            }
+
+            &--price {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                white-space: nowrap;
+                transition: .3s;
+
+                @media (min-width: 1152px) {
+                    font-size: 18px;
+                }
+
+                &:after {
+                    width: 8px;
+                    height: 8px;
+                    content: '';
+                    margin-left: 6px;
+                    border-top: 1px solid;
+                    border-right: 1px solid;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

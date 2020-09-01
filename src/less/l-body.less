@@ -1,0 +1,59 @@
+/* .l-body
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.l-body';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-direction: column;
+        color: @black;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        background-color: @white;
+        font-family: 'circe', sans-serif;
+
+        @media (min-width: 1152px) {
+            animation-name: fadeIn;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--overflow {
+
+            @media (max-width: 1151px) {
+                overflow: hidden;
+            }
+        }
+
+        @media (min-width: 1025px) {
+
+            ::-webkit-scrollbar {
+                -webkit-appearance: none;
+            }
+
+            ::-webkit-scrollbar:vertical {
+                width: 3px;
+            }
+
+            ::-webkit-scrollbar:horizontal {
+                height: 3px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: #aab4be;
+            }
+
+            ::-webkit-scrollbar-track {
+                background-color: #f3f4f9;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

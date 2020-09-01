@@ -1,0 +1,274 @@
+/* .c-apartment
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-apartment';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        &__item {
+            padding: 10px;
+            margin-top: 10px;
+            line-height: 1.4;
+            border: 1px solid #e0e3e7;
+            background-color: #ffffff;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            padding-right: 10px;
+        }
+
+        &__count {
+            display: flex;
+            align-items: center;
+            align-self: baseline;
+            justify-content: center;
+            height: 20px;
+            min-width: 20px;
+            padding: 0 4px;
+            padding-top: 2px;
+            color: #8d99a7;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: 100%;
+            border: 1px solid;
+        }
+
+        &__caption {
+            margin-right: 6px;
+        }
+
+        &__guest {
+            display: flex;
+            align-items: center;
+            color: #b4bac2;
+            white-space: nowrap;
+
+            > * {
+                margin-right: 2px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            img {
+                max-width: 12px;
+            }
+
+            &--h-10 {
+                height: 10px;
+            }
+
+            &--plus {
+                color: @black;
+            }
+
+            &--year {
+                align-self: center;
+                font-size: 12px;
+                white-space: nowrap; 
+            }            
+        }
+
+        &__price {
+            display: flex;
+            align-items: center;
+            
+            &--old {
+                font-size: 12px;
+                margin-right: 6px;
+            }
+
+            &--current {
+                color: #1c8ad8;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 26px;
+            color: #1ba0ff;
+            padding-top: 2px;
+            border: solid 1px #1ba0ff;
+
+            &--green {
+                border: 0;
+                color: #ffffff;
+                background-color: #44b759;
+            }
+        }
+
+        &__taxes {
+            color: #8593a2;
+            font-size: 12px;
+        }
+
+        &__tag {
+            display: flex;
+            align-items: center;
+            height: 20px;
+            padding: 0 6px;
+            font-size: 12px;
+            margin-right: 6px;
+            border: solid 1px #b4bac2;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__ribbon {
+            color: #ffffff;
+            padding: 0 6px;
+            line-height: 20px;
+            background-color: #f76a43;
+        }
+
+        &__amount {
+            display: flex;
+            align-items: center;
+
+            &--value {
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+                min-width: 60px;
+            }
+
+            &--button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 26px;
+                height: 26px;
+                cursor: pointer;
+                background-color: #f3f5f8;
+            }
+
+            &--minus {
+                position: relative;
+
+                &:before {
+                    top: 8px;
+                    left: 8px;
+                    right: 8px;
+                    bottom: 8px;
+                    content: '';
+                    margin: auto;
+                    position: absolute;
+                    height: 2px;
+                    background-color: currentcolor;
+                }
+            }
+
+            &--plus {
+                position: relative;
+        
+                &:after,
+                &:before {
+                    top: 8px;
+                    left: 8px;
+                    right: 8px;
+                    bottom: 8px;
+                    content: '';
+                    margin: auto;
+                    position: absolute;
+                }
+                
+                &:after,
+                &:before {
+                    height: 2px;
+                    background-color: currentcolor;
+                }
+
+                &:after {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
+        &__inline {
+            flex-wrap: wrap;
+
+            > * {
+                display: inline-flex;
+                margin-right: 16px;
+                margin-bottom: 6px;
+            }
+        }
+        
+        // modifier
+        //-------------------------------------------------------
+        &--space-between {
+            justify-content: space-between;
+        }
+
+        &--self-start {
+            align-self: flex-start;
+        }
+
+        &--block {
+            display: block;
+        }
+
+        &--bold {
+            font-weight: 600;
+        }
+
+        &--red {
+            color: #f76a43;
+        }
+
+        &--blue {
+            color: #1c8ad8;
+        }
+
+        &--green {
+            color: #44b759;
+        }
+
+        &--black {
+            color: @black;
+        }
+
+        &--fs-12 {
+            font-size: 12px;
+        }
+
+        &--fs-16 {
+            font-size: 16px;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

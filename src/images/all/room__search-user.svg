@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#444f5e}
+        </style>
+    </defs>
+    <g id="prefix__user_4_" data-name="user (4)" transform="translate(-20.6)">
+        <ellipse id="prefix__Ellipse_1" cx="3.877" cy="3.843" class="prefix__cls-1" data-name="Ellipse 1" rx="3.877" ry="3.843" transform="translate(23.726)"/>
+        <path id="prefix__Path_1" d="M27.6 150a6.985 6.985 0 0 0-7 6.969h14a6.984 6.984 0 0 0-7-6.969z" class="prefix__cls-1" data-name="Path 1" transform="translate(0 -141.969)"/>
+    </g>
+</svg>

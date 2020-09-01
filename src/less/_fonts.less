@@ -1,0 +1,44 @@
+/* fonts
+---------------------------------------------------------------*/
+.mixin-font {
+    .var () { @r: ~ 'circe'; }.var;
+
+    @font-face {
+        font-weight: 300;
+        font-style: normal;
+        font-family: '@{r}';
+        src: url('../fonts/@{r}/@{r}__300.woff') format('woff');
+    }
+
+    @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: '@{r}';
+        src: url('../fonts/@{r}/@{r}__400.woff') format('woff');
+    }
+
+    @font-face {
+        font-weight: 600;
+        font-style: normal;
+        font-family: '@{r}';
+        src: url('../fonts/@{r}/@{r}__600.woff') format('woff');
+    }
+
+    @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: '@{r}';
+        src: url('../fonts/@{r}/@{r}__900.woff') format('woff');
+    }
+}
+
+.mixin-font {
+    .var () { @r: ~ 'lg'; }.var;
+
+    @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: '@{r}';
+        src: url('../fonts/@{r}/@{r}.woff') format('woff');
+    }
+}

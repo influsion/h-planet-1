@@ -1,0 +1,47 @@
+/* .c-star
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-star';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: inline-flex;
+        cursor: pointer;
+
+        &__item {
+            display: flex;
+            font-size: 14px;
+            color: @gray-light;
+
+            & + & {
+                padding-left: 4px;
+            }
+
+            &--active {
+                color: @yellow;
+            }
+
+            &:hover {
+                color: @yellow;
+
+                ~ * {
+                    color: #e0e0e0 !important;
+                }
+            }
+        }
+
+        &:hover &__item {
+            color: @yellow;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--disabled {
+            pointer-events: none;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

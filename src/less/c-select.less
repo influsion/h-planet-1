@@ -1,0 +1,209 @@
+/* .c-select
+----------------------------------------------------------------*/
+& {
+  @r: ~".c-select";
+
+  // base
+  //-----------------------------------------------------------
+  @{r} {
+    width: 100%;
+    user-select: none;
+    position: relative;
+
+    &__selected {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-width: 0;
+      cursor: pointer;
+      // overflow: hidden;
+      position: relative;
+      // white-space: nowrap;
+      // display: inline-block;
+      // vertical-align: bottom;
+      // text-overflow: ellipsis;
+      height: @form;
+      // line-height: @form;
+      padding-left: 20px;
+      padding-right: 50px;
+      background-color: @white;
+      border: 1px solid @gray-light;
+      transition: border-color 0.3s;
+
+      &:after,
+      &:before {
+        top: 0;
+        bottom: 0;
+        content: "";
+        margin: auto;
+        position: absolute;
+      }
+
+      &:after {
+        width: 1px;
+        height: 50%;
+        right: 38px;
+        background-color: @gray-light;
+        transition: background-color 0.3s;
+      }
+
+      &:before {
+        width: 0;
+        height: 0;
+        right: 16px;
+        border-top: 6px solid;
+        border-left: 4px solid rgba(0, 0, 0, 0);
+        border-right: 4px solid rgba(0, 0, 0, 0);
+      }
+
+      @{r}__item--abbr {
+        min-width: auto;
+        margin-right: 6px;
+      }
+
+      &:hover {
+        border-color: darken(@gray-light, 10%);
+      }
+    }
+
+    &__dropdown {
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      border: 1px solid @gray-light;
+      background-color: @white;
+
+      &--top {
+        top: auto;
+        bottom: 100%;
+      }
+    }
+
+    &__scroll {
+      overflow: auto;
+      max-height: 180px;
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      line-height: 1.2;
+      padding: 10px 20px;
+      transition: background 0.3s;
+
+      .icon {
+        display: flex;
+        margin-right: 8px;
+      }
+
+      &--abbr {
+        min-width: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      &--title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      &:hover {
+        background-color: @gray-light;
+      }
+    }
+
+    &--active @{r}__dropdown {
+      z-index: 9;
+      display: block;
+      animation-name: zoomIn;
+      animation-duration: 0.3s;
+      animation-fill-mode: both;
+    }
+
+    // modifier
+    //-------------------------------------------------------
+    &--sort {
+      width: auto;
+      margin-left: 20px;
+
+      @{r}__selected {
+        height: 32px;
+        min-width: 130px;
+        padding-left: 10px;
+        padding-right: 26px;
+        white-space: nowrap;
+
+        &:after {
+          display: none;
+        }
+
+        &:before {
+          right: 10px;
+        }
+      }
+    }
+
+    &--age {
+      max-width: 50px;
+      min-width: 50px;
+
+      @{r}__item {
+        padding: 10px;
+        justify-content: center;
+      }
+    }
+
+    &--w-auto {
+      width: auto;
+    }
+
+    &--w-100 {
+      min-width: 100px;
+    }
+
+    // &--icon-left {
+    //     display: flex;
+    //     position: relative;
+
+    //     @{r}__selected {
+    //         padding-left: 40px;
+    //     }
+
+    //     .icon {
+    //         top: 0;
+    //         left: 12px;
+    //         bottom: 0;
+    //         margin: auto;
+    //         color: @white;
+    //         font-size: 18px;
+    //         position: absolute;
+    //     }
+    // }
+  }
+
+  // influence
+  //-----------------------------------------------------------
+  .c-booking @{r} {
+    width: 90px;
+
+    &__selected {
+      height: 30px;
+      line-height: 30px;
+      padding-left: 10px;
+      padding-right: 20px;
+
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        right: 6px;
+      }
+    }
+  }
+}

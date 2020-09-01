@@ -1,0 +1,76 @@
+/* .c-compare
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-compare';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        padding: 10px;
+        background-color: #f3f5f8;
+
+        &__row {
+            margin-top: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            padding: 0 10px;
+            position: relative;
+            background-color: #ffffff;
+            transition: .3s;
+
+            &:hover {
+                background-color: @blue;
+
+                @{r}__text {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        &__text {
+            color: @blue;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        &__img img {
+            max-width: 100px;
+            max-height: 20px;
+        }
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            top: 0;
+            bottom: 0;
+            right: 10px;
+            margin: auto;
+            position: absolute;
+
+            img {
+                width: auto;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--has-icon {
+
+            &:hover {
+                background-color: #e7ebf3;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

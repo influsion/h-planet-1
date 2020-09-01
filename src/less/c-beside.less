@@ -1,0 +1,44 @@
+/* .c-beside
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-beside';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__column {
+            margin-top: 40px;
+            margin-right: 40px;
+            .mixin-grid(4, 40px);
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            color: inherit;
+            padding: 4px 0;
+            transition: .3s;
+
+            @media (max-width: 1151px) {
+                justify-content: space-between;
+            }
+
+            &:hover {
+                color: @blue;
+            }
+        }
+
+        &__distance {
+            margin-left: 10px;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

@@ -1,0 +1,46 @@
+/* .c-close
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-close';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 100%;
+        cursor: pointer;
+        position: relative;
+        transition: transform .3s;
+
+        &:after,
+        &:before {
+            width: 2px;
+            height: 14px;
+            content: '';
+            margin: auto;
+            position: absolute;
+            background-color: @black;
+        }
+
+        &:after {
+            transform: rotate(45deg);
+        }
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

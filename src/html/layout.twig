@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>{% block head_title %}{% endblock %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=0">
+    {% block head %}<link rel="shortcut icon" href="images/favicon.ico">{% endblock %}
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+    {% block body %}{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>svg4everybody();</script>
+</body>
+</html>

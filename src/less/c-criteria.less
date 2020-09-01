@@ -1,0 +1,35 @@
+/* .c-criteria
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-criteria';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__link {
+            display: block;
+            color: @black;
+            transition: .3s;
+
+            @media (min-width: 1152px) {
+                line-height: 2.5;
+                margin-right: 20px;
+                .mixin-grid(7, 20px);
+            }
+
+            &:hover {
+                color: @blue;
+                text-decoration: underline;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

@@ -1,0 +1,134 @@
+/* .c-tourist
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-tourist';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        &__column {
+            flex-grow: 1;
+            padding-right: 80px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        &__row {
+            margin-top: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__chart {
+
+            &--info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &--title {
+
+            }
+
+            &--grade {
+                font-weight: 600;
+            }
+
+            &--line {
+                height: 8px;
+                margin-top: 4px;
+                border-radius: 4px;
+                position: relative;
+                background-color: #f3f5f7;
+            }
+
+            &--progress {
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 50%;
+                position: absolute;
+                border-radius: 4px;
+                background-image: linear-gradient(89deg, #0396ff -25%, #abdcff 125%);
+            }
+        }
+
+        &__rating {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+
+            &--service {
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 1.4;
+            }
+
+            &--number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                color: @white;
+                line-height: 1;
+                font-size: 12px;
+                font-weight: 900;
+                padding-top: 4px;
+                margin-top: 10px;
+                margin-bottom: 6px;
+                position: relative;
+                border-radius: 6px;
+                background-color: #033580;
+                border-bottom-left-radius: 0;
+
+                @media (min-width: 1152px) {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 14px;
+                }
+            }
+
+            &--title {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            &--review {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #8593a2;
+                font-size: 12px;
+            }
+
+            &--link {
+                color: @blue;
+                font-weight: 600;
+                margin-left: 4px;
+                transition: .3s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--flex-none {
+            flex: none;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

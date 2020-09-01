@@ -1,0 +1,59 @@
+/* .c-assessment
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-assessment';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        &__text {
+            color: #444f5e;
+            line-height: 1.8;
+        }
+
+        &__more {
+            display: inline-flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+
+            &:after {
+                width: 5px;
+                height: 5px;
+                content: '';
+                margin-left: 6px;
+                border-top: 1px solid;
+                border-right: 1px solid;
+                transform: rotate(45deg);
+            }
+
+            &--arrow-down:after {
+                transform: rotate(135deg);
+            }
+
+            &:hover {
+                color: @blue;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--fs-12 {
+            font-size: 12px;
+        }
+
+        &--clamp {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

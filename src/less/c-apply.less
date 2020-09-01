@@ -1,0 +1,95 @@
+/* .c-apply
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-apply';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        align-items: center;
+
+        &__selected {
+            flex-grow: 1;
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            height: 26px;
+            color: @black;
+            font-size: 12px;
+            cursor: pointer;
+            margin-right: 10px;
+            position: relative;
+            padding-left: 10px;
+            padding-right: 20px;
+            text-transform: uppercase;
+            background-color: #edf1f7;
+            transition: .3s;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:after,
+            &:before {
+                top: 0;
+                bottom: 0;
+                right: 10px;
+                width: 1px;
+                height: 10px;
+                content: '';
+                margin: auto;
+                position: absolute;
+                background-color: #a0a4ac;
+                transition: .3s;
+            }
+
+            &:after {
+                transform: rotate(45deg);
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                background-color: darken(#edf1f7, 5%);
+            }
+        }
+
+        &__reset {
+            display: flex;
+            color: @black;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            text-transform: uppercase;
+            transition: .3s;
+
+            @media (max-width: 1151px) {
+                order: -1;
+                margin-right: 10px;
+            }
+
+            @media (min-width: 1152px) {
+                margin-left: 20px;
+            }
+
+            &:hover {
+                color: @blue;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

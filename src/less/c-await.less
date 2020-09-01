@@ -1,0 +1,82 @@
+/* .c-await
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-await';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 120px;
+        position: relative;
+        padding: 20px 40px;
+        background-color: #ffa95a;
+        transition: .3s;
+
+        &__text {
+            color: #ffffff;
+            font-size: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            transform: translateY(4px);
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            color: #ffa95a;
+            padding: 0 26px;
+            font-size: 22px;
+            font-weight: 600;
+            background-color: #ffffff;
+        }
+
+        &__close {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            top: 10px;
+            right: 10px;
+            width: 12px;
+            height: 12px;
+            cursor: pointer;
+            position: absolute;
+            transition: transform .3s;
+
+            &:after,
+            &:before {
+                width: 1px;
+                height: 12px;
+                content: '';
+                margin: auto;
+                position: absolute;
+                background-color: #ffffff;
+            }
+
+            &:after {
+                transform: rotate(45deg);
+            }
+
+            &:before {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+
+        &:hover {
+            background-color: darken(#ffa95a, 5%);
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

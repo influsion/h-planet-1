@@ -1,0 +1,60 @@
+/* .c-subscription
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-subscription';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: @gray-lighten;
+
+        @media (min-width: 1152px) {
+            display: none;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__form {
+            flex-grow: 1;
+
+            @media (min-width: 1152px) {
+                flex-grow: 0;
+                padding-left: 100px;
+            }
+
+            &--title {
+                font-weight: 600;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+
+                @media (min-width: 1152px) {
+                    display: none;
+                }
+            }
+
+            &--text {
+                color: @gray-dark;
+                font-size: 12px;
+                margin-top: 20px;
+
+                @media (min-width: 1152px) {
+                    display: none;
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

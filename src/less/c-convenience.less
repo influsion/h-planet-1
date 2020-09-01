@@ -1,0 +1,74 @@
+/* .c-convenience
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-convenience';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        column-count: 3;
+        column-gap: 40px;
+
+        &__block {
+            margin-bottom: 30px;
+            break-inside: avoid-column;
+        }
+
+        &__title {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            img {
+                width: auto;
+                max-width: 30px;
+                max-height: 34px;
+                margin-right: 10px;
+            }
+        }
+
+        &__item {
+            line-height: 1.4;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            position: relative;
+
+            &:before {
+                left: 0;
+                top: 8px;
+                width: 5px;
+                height: 5px;
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+                background-color: #d3d7db;
+            }
+        }
+
+        &__mark {
+            display: inline-flex;
+            align-items: center;
+            height: 20px;
+            padding: 0 4px;
+            padding-top: 2px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--gray {
+            background-color: #f3f5f7;
+        }
+
+        &--green {
+            color: #ffffff;
+            background-color: #44b759;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

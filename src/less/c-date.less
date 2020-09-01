@@ -1,0 +1,82 @@
+/* .c-date
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-date';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        &__row {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        &__change {
+            color: #1ba0ff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        &__calendar {
+            display: flex;
+            justify-content: space-between;
+
+            &--column {
+                display: flex;
+                flex-direction: column;
+                width: calc(~ '50% - 5px');
+            }
+
+            &--title {
+                font-weight: 600;
+                margin-bottom: 4px;
+            }
+
+            &--input {
+                position: relative;
+
+                input {
+                    height: 38px;
+                    padding-left: 38px;
+                    background-color: #ffffff;
+                }
+
+                img {
+                    top: 0;
+                    bottom: 0;
+                    left: 10px;
+                    width: auto;
+                    margin: auto;
+                    position: absolute;
+                }
+            }
+        }
+
+
+        // modifier
+        //-------------------------------------------------------
+        &--space-between {
+            justify-content: space-between;
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

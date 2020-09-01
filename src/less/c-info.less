@@ -1,0 +1,128 @@
+/* .c-info
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-info';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        @media (max-width: 1151px) {
+            padding: 10px;
+            margin-left: -@gap;
+            margin-right: -@gap;
+            overflow-x: auto;
+
+            &:after {
+                content: '';
+                min-width: 1px;
+            }
+        }
+
+        @media (min-width: 1152px) {
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        &__item {
+            flex: none;
+            padding: 16px;
+            margin-right: 10px;
+            position: relative;
+            box-shadow: 0 4px 10px 0 #d0dbea;
+            transition: .3s;
+
+            @media (max-width: 1151px) {
+                width: 230px;
+                height: 130px;
+            }
+
+            @media (min-width: 1152px) {
+                height: 160px;
+                margin-top: 20px;
+                margin-right: 20px;
+                .mixin-grid(4, 20px);
+                box-shadow: 0 4px 17px 0 #d0dbea;
+            }
+
+            &:hover {
+                box-shadow: 0 0 10px 0 #adc0da;
+            }
+        }
+
+        &__title {
+            color: @black;
+            font-size: 16px;
+        }
+
+        &__data {
+            display: inline-flex;
+            align-items: baseline;
+            color: #123650;
+            line-height: 1;
+            font-size: 30px;
+            font-weight: 900;
+            margin-top: 20px;
+
+            & + & {
+                margin-left: 6px;
+            }
+
+            &--add {
+                font-size: 14px;
+                font-weight: 400;
+                margin-left: 6px;
+                text-transform: uppercase;
+            }
+
+            &--time {
+                margin-left: 0;
+                font-size: 10px;
+            }
+
+            img {
+                max-width: 100px;
+            }
+        }
+
+        &__icon {
+            display: flex;
+            right: 16px;
+            color: #d0dbea;
+            position: absolute;
+
+            @media (max-width: 1151px) {
+                bottom: 16px;
+                font-size: 50px;
+            }
+
+            @media (min-width: 1152px) {
+                bottom: 34px;
+                font-size: 58px;
+            }
+
+            .icon {
+
+                &--info-7 {
+                    width: unit(80 / 100, em);
+
+                    @media (max-width: 1151px) {
+                        font-size: 56px;
+                    }
+
+                    @media (min-width: 1152px) {
+                        font-size: 64px;
+                    }
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

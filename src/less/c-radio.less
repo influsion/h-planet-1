@@ -1,0 +1,131 @@
+/* .c-radio
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-radio';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        input {
+            display: none;
+        }
+
+        &__label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        &__title {
+            flex-grow: 1;
+            line-height: 1.4;
+            transition: .3s;
+        }
+
+        &__icon {
+            display: flex;
+            top: -1px;
+            height: 16px;
+            min-width: 16px;
+            margin-right: @gap;
+            position: relative;
+            border-radius: 100%;
+            background-color: @white;
+            border: 1px solid rgba(133, 147, 162, 0.8);
+            transition: .3s;
+
+            &:before {
+                top: 3px;
+                left: 3px;
+                right: 3px;
+                bottom: 3px;
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+                background-color: @blue;
+                opacity: 0;
+                transition: .3s;
+            }
+        }
+
+        &__count {
+            display: none;
+
+            @media (min-width: 1152px) {
+                display: flex;
+                margin-left: 10px;
+            }
+        }
+
+        :checked {
+
+            // ~ @{r}__title {
+            //     color: @purple;
+            // }
+
+            ~ @{r}__icon {
+
+                &:before {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+
+        &:hover {
+
+            @{r}__title {
+                color: @blue;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+    .c-booking--difficult .c-booking--open.c-booking__column--passengers @{r} {
+
+        @media (max-width: 1151px) {
+            flex-grow: 1;
+            margin-top: 10px;
+            position: relative;
+
+            &__icon {
+                height: 14px;
+                min-width: 14px;
+                margin-right: 16px;
+            }
+
+            &__title {
+                color: #8593a2;
+                font-size: 18px;
+            }
+
+            :checked {
+
+                ~ @{r}__title {
+                    color: @black;
+
+                    &:after {
+                        top: -10px;
+                        left: -20px;
+                        right: -20px;
+                        bottom: -10px;
+                        z-index: -1;
+                        content: '';
+                        position: absolute;
+                        background-color: #f3f5f8;
+                    }
+                }
+
+                ~ @{r}__icon {
+                    border-color: @blue;
+                }
+            }
+        }
+    }
+}

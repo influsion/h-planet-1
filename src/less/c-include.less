@@ -1,0 +1,45 @@
+/* .с-include
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.с-include';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        column-gap: 16px;
+        column-count: 2;
+
+        &__list {
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            font-weight: 600;
+        }
+
+        &__item {
+            color: #444f5e;
+            font-size: 12px;
+            margin-top: 6px;
+            padding-left: 12px;
+            position: relative;
+
+            &:before {
+                left: 0;
+                top: 6px;
+                width: 4px;
+                height: 4px;
+                content: '';
+                position: absolute;
+                border-radius: 100%;
+                background-color: #d3d7db;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

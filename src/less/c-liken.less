@@ -1,0 +1,129 @@
+/* .c-liken
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-liken';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        &__row {
+            display: flex;
+            align-items: center;
+            margin-top: -1px;
+            border: 1px solid rgba(0,0,0,0);
+            border-bottom: 1px solid #d8e3ee;
+            transition: .3s;
+
+            &--header {
+                border-bottom: 0;
+                background-color: #f3f5f7;
+            }
+
+            &--all {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px;
+                cursor: pointer;
+                font-weight: 600;
+                transition: .3s;
+
+                &:after {
+                    width: 6px;
+                    height: 6px;
+                    content: '';
+                    margin-top: -2px;
+                    margin-left: 6px;
+                    border-right: 1px solid;
+                    border-bottom: 1px solid;
+                    transform: rotate(45deg);
+                }
+
+                &:hover {
+                    color: @blue;
+                }
+            }
+
+            &:hover:not(&--header):not(&--all) {
+                // padding-right: 16px;
+                border-color: #d8e3ee;
+                background-color: #f3f5f7;
+            }
+        }
+
+        &__column {
+            padding: 10px 16px;
+            box-sizing: content-box;
+
+            &--supplier {
+                width: 100px;
+            }
+
+            &--room-type {
+                width: 200px;
+            }
+
+            &--accommodations {
+                flex-grow: 1;
+            }
+
+            &--night {
+                width: 100px;
+            }
+
+            &--book {
+                width: 120px;
+                // padding-right: 0;
+            }
+        }
+
+        &__title {
+            font-weight: 600;
+        }
+
+        &__logo {
+            display: flex;
+
+            img {
+                width: auto;
+                max-width: 80px;
+                max-height: 30px;
+            }
+        }
+
+        &__payment {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: auto;
+                margin-right: 10px;
+            }
+        }
+
+        &__price {
+            font-size: 16px;
+        }
+
+        &__button {
+            width: 100%;
+            height: 30px;
+            padding: 0 10px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: none;
+        }
+
+        &__bonus {
+            color: #44b759;
+            font-weight: 600;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

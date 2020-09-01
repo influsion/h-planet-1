@@ -1,0 +1,49 @@
+/* .c-hotel
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-hotel';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        overflow-x: auto;
+
+        @media (min-width: 1152px) {
+            flex-wrap: wrap;
+            overflow-x: visible;
+        }
+
+        &__item {
+            flex: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 70px;
+            margin-right: 10px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid #cdd2d5;
+            transition: .3s;
+
+            @media (min-width: 1152px) {
+                height: 90px;
+                margin-top: 20px;
+                margin-right: 20px;
+                .mixin-grid(7, 20px);
+
+                &:hover {
+                    border-color: rgba(0,0,0,0);
+                    box-shadow: 0 0 10px rgba(205, 210, 213, .6);
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

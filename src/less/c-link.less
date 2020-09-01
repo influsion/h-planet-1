@@ -1,0 +1,46 @@
+/* .c-link
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-link';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: underline;
+        transition: color .3s;
+
+        &:hover {
+            color: @black;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--all {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            white-space: nowrap;
+            text-decoration: none;
+
+            &:after {
+                flex: none;
+                width: 8px;
+                height: 8px;
+                content: '';
+                margin-left: 6px;
+                border-top: 2px solid;
+                border-right: 2px solid;
+                transform: rotate(45deg);
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

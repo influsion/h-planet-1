@@ -1,0 +1,949 @@
+{% extends '../layout.twig' %}
+
+{% block head_title %}Country | Planet of Hotels{% endblock %}
+
+{% block body_class %}l-body{% endblock %}
+
+{% block body %}
+
+{% include '../partials/l-header.twig' %}
+
+<div class="c-banner c-banner--70vh">
+  <picture class="c-banner__picture">
+    <img src="images/banners/1.jpg" alt="image">
+  </picture>
+  <div class="l-container">
+    <div class="c-banner__wrap">
+      <div class="c-banner__info">
+        <div class="c-tab c-tab--booking">
+          <div class="c-tab__nav max-1151">
+            <a class="c-tab__link c-tab__link--active" href="javascript:void(0)" data-title="Отели">
+              <div class="c-tab__link--inner">
+                <svg class="icon icon--bed-1">
+                  <use xlink:href="images/_sprite.svg#icon--bed-1"></use>
+                </svg>
+                Отели
+              </div>
+            </a>
+            <a class="c-tab__link" href="javascript:void(0)" data-title="Авиабилеты">
+              <div class="c-tab__link--inner">
+                <svg class="icon icon--plane">
+                  <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                </svg>
+                Авиабилеты
+              </div>
+            </a>
+            <a class="c-tab__link" href="javascript:void(0)" data-title="Аренда авто">
+              <div class="c-tab__link--inner">
+                <svg class="icon icon--car">
+                  <use xlink:href="images/_sprite.svg#icon--car"></use>
+                </svg>
+                Аренда авто
+              </div>
+            </a>
+            <a class="c-tab__link" href="javascript:void(0)" data-title="Экскурсии">
+              <div class="c-tab__link--inner">
+                <svg class="icon icon--ticket">
+                  <use xlink:href="images/_sprite.svg#icon--ticket"></use>
+                </svg>
+                Экскурсии
+              </div>
+            </a>
+          </div>
+          <div class="c-tab__content">
+            <div class="c-tab__item c-tab__item--active">
+              <div class="c-tab__title">
+                <h1 class="c-tab__title--h1">
+                  Отели Италии
+                </h1>
+                <div class="c-tab__title--sub min-1152">
+                  Введите свои даты и выбирайте из 272 551 отеля и других вариантов жилья!
+                </div>
+              </div>
+              <form class="c-booking c-form">
+                <div class="c-booking__column c-booking__column--direction">
+                  <div class="c-booking__panel">
+                    <div class="c-booking__panel--title">
+                      Укажите направление
+                    </div>
+                    <div class="c-booking__panel--close"></div>
+                  </div>
+                  <div class="c-booking__input">
+                    <input type="text" placeholder="Укажите город или отель" value="" required />
+                    <svg class="icon icon--search">
+                      <use xlink:href="images/_sprite.svg#icon--search"></use>
+                    </svg>
+                    <div class="c-booking__input--clear"></div>
+                  </div>
+                  <div class="c-booking__dropdown">
+                    <div class="c-booking__dropdown--item">
+                      <div class="c-booking__dropdown--icon">
+                        <svg class="icon icon--pin">
+                          <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                        </svg>
+                      </div>
+                      <div class="c-booking__dropdown--info">
+                        <div class="c-booking__dropdown--location">
+                          Италия
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item">
+                      <div class="c-booking__dropdown--icon">
+                        <svg class="icon icon--pin">
+                          <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                        </svg>
+                      </div>
+                      <div class="c-booking__dropdown--info">
+                        <div class="c-booking__dropdown--location">
+                          Итальянская Ривьера
+                        </div>
+                        <div class="c-booking__dropdown--region">
+                          Регион - Италия
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item">
+                      <div class="c-booking__dropdown--icon">
+                        <svg class="icon icon--plane">
+                          <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                        </svg>
+                      </div>
+                      <div class="c-booking__dropdown--info">
+                        <div class="c-booking__dropdown--location">
+                          Аэропорт Рим
+                        </div>
+                        <div class="c-booking__dropdown--region">
+                          Город - Лацио, Италия
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item">
+                      <div class="c-booking__dropdown--icon">
+                        <svg class="icon icon--bed-2">
+                          <use xlink:href="images/_sprite.svg#icon--bed-2"></use>
+                        </svg>
+                      </div>
+                      <div class="c-booking__dropdown--info">
+                        <div class="c-booking__dropdown--location">
+                          Intercontinental Rome
+                        </div>
+                        <div class="c-booking__dropdown--region">
+                          Регион - Италия
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item">
+                      <div class="c-booking__dropdown--icon">
+                        <svg class="icon icon--monastery">
+                          <use xlink:href="images/_sprite.svg#icon--monastery"></use>
+                        </svg>
+                      </div>
+                      <div class="c-booking__dropdown--info">
+                        <div class="c-booking__dropdown--location">
+                          Колизей
+                        </div>
+                        <div class="c-booking__dropdown--region">
+                          Регион - Италия
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-booking__column c-booking__column--check-in" data-title="Дата заезда:">
+                  <div class="c-booking__panel">
+                    <div class="c-booking__panel--title">
+                      Укажите дату заезда
+                    </div>
+                    <div class="c-booking__panel--close"></div>
+                  </div>
+                  <div class="c-booking__input">
+                    <input type="text" placeholder="Заезд" required />
+                    <svg class="icon icon--calendar">
+                      <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-booking__column c-booking__column--check-out" data-title="Дата отъезда:">
+                  <div class="c-booking__panel">
+                    <div class="c-booking__panel--title">
+                      Укажите дату отъезда
+                    </div>
+                    <div class="c-booking__panel--close"></div>
+                  </div>
+                  <div class="c-booking__input">
+                    <input type="text" placeholder="Отъезд" required />
+                    <svg class="icon icon--calendar">
+                      <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="c-booking__column c-booking__column--people" data-title="Количество взрослых/детей:">
+                  <div class="c-booking__panel">
+                    <div class="c-booking__panel--title">
+                      Укажите к-во взрослых/детей
+                    </div>
+                    <div class="c-booking__panel--close"></div>
+                  </div>
+                  <div class="c-booking__input">
+                    <div class="c-booking__input--column">
+                      <span id="c-booking__count--adult">2</span> взрослых
+                    </div>
+                    <div class="c-booking__input--column">
+                      <span id="c-booking__count--children">0</span> детей
+                    </div>
+                    <div class="c-booking__input--column">
+                      <span id="c-booking__count--room">1</span> номер
+                    </div>
+                    <svg class="icon icon--user">
+                      <use xlink:href="images/_sprite.svg#icon--user"></use>
+                    </svg>
+                  </div>
+                  <div class="c-booking__dropdown" id="c-booking__count">
+                    <div class="c-booking__dropdown--item c-booking--no-pointer">
+                      <div class="c-booking__dropdown--title">
+                        Взрослых
+                      </div>
+                      <div class="c-booking__count">
+                        <a class="c-booking__count--minus" href="#c-booking__count--adult"></a>
+                        <div class="c-booking__count--value">2</div>
+                        <a class="c-booking__count--plus" href="#c-booking__count--adult"></a>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item c-booking--no-pointer">
+                      <div class="c-booking__dropdown--title">
+                        Дети
+                      </div>
+                      <div class="c-booking__count">
+                        <a class="c-booking__count--minus" href="#c-booking__count--children"></a>
+                        <div class="c-booking__count--value">0</div>
+                        <a class="c-booking__count--plus" href="#c-booking__count--children"></a>
+                      </div>
+                    </div>
+                    <div class="c-booking__dropdown--item c-booking--no-pointer">
+                      <div class="c-booking__dropdown--title">
+                        Номера
+                      </div>
+                      <div class="c-booking__count">
+                        <a class="c-booking__count--minus" href="#c-booking__count--room"></a>
+                        <div class="c-booking__count--value">1</div>
+                        <a class="c-booking__count--plus" href="#c-booking__count--room"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-booking__column c-booking__column--submit">
+                  <button class="c-button c-button--yellow min-1152" type="submit">
+                    <span class="c-button__inner">
+                      <svg class="icon icon--search">
+                        <use xlink:href="images/_sprite.svg#icon--search"></use>
+                      </svg>
+                    </span>
+                  </button>
+                  <button class="c-button c-button--blue max-1151" type="submit">
+                    <span class="c-button__inner">
+                      Найти отель
+                    </span>
+                  </button>
+                </div>
+                <div class="c-checkbox c-checkbox--booking min-1152">
+                  <label class="c-checkbox__label">
+                    <input type="checkbox" name="checkbox" checked>
+                    <span class="c-checkbox__icon"></span>
+                    <span class="c-checkbox__title">
+                      Сравнить цены на других сайтах
+                    </span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="c-crumb min-1152">
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Главная
+        </a>
+        <div class="c-crumb__separator"></div>
+        <a class="c-crumb__link" href="javascript:void(0)">
+          Европа
+        </a>
+        <div class="c-crumb__separator"></div>
+        <span class="c-crumb__link c-crumb__link--current">
+          Отели Италии
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="l-main">
+  <div class="l-container">
+
+    <!-- Популярные города Италии - start -->
+    <div class="l-row l-row--mt-40">
+      <h2 class="c-title c-title--left-max-1151">
+        Популярные города Италии
+      </h2>
+    </div>
+    <div class="l-row">
+      <div class="c-direction">
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/1.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Рим
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/2.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Римини
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/3.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Венеция
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/4.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Флоренция
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/5.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Палермо
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+        <div class="c-direction__column">
+          <a class="c-direction__item" href="javascript:void(0)">
+            <div class="c-direction__img">
+              <img src="../images/directions/6.png" alt="image">
+            </div>
+            <div class="c-direction__title">
+              Пиза
+            </div>
+            <div class="c-direction__more">
+              Подробнее
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="l-row l-row--mt-80">
+      <div class="c-tab__nav">
+        <a class="c-tab__link c-tab__link--active" href="#c-tab__14-1" data-title="Города Италии"></a>
+        <a class="c-tab__link" href="#c-tab__14-2" data-title="Регионы Италии"></a>
+        <a class="c-tab__link" href="#c-tab__14-3" data-title="Популярные направления"></a>
+      </div>
+      <div class="c-tab__content">
+        <div class="c-tab__item c-tab__item--active" id="c-tab__14-1">
+          <div class="c-slick c-slick__direction">
+            {% include '../partials/c-direction.twig' %}
+            {% include '../partials/c-direction.twig' %}
+            {% include '../partials/c-direction.twig' %}
+          </div>
+        </div>
+        <div class="c-tab__item" id="c-tab__14-2">
+          Контент...
+        </div>
+        <div class="c-tab__item" id="c-tab__14-3">
+          Контент...
+        </div>
+      </div>
+    </div>
+    <!-- Популярные города Италии - end -->
+
+    <!-- Популярные направления - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Популярные направления
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab c-tab--100vw">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__1-1" data-title="Горнолыжный"></a>
+          <a class="c-tab__link" href="#c-tab__1-2" data-title="Пляжный"></a>
+          <a class="c-tab__link" href="#c-tab__1-3" data-title="Семейный"></a>
+          <a class="c-tab__link" href="#c-tab__1-4" data-title="Шопинг"></a>
+          <a class="c-tab__link" href="#c-tab__1-5" data-title="Архитектура"></a>
+          <a class="c-tab__link" href="#c-tab__1-6" data-title="Острова"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__1-1">
+            <div class="c-slick c-slick__slideset">
+              {% include '../partials/popular_destinations.twig' %}
+              {% include '../partials/popular_destinations.twig' %}
+              {% include '../partials/popular_destinations.twig' %}
+              {% include '../partials/popular_destinations.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__1-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__1-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__1-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__1-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__1-6">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Популярные направления - end -->
+
+    <!-- Популярные отели Италии - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Популярные отели Италии
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__2-1" data-title="Нью-Йорк"></a>
+          <a class="c-tab__link" href="#c-tab__2-2" data-title="Венеция"></a>
+          <a class="c-tab__link" href="#c-tab__2-3" data-title="Рим"></a>
+          <a class="c-tab__link" href="#c-tab__2-4" data-title="Милан"></a>
+          <a class="c-tab__link" href="#c-tab__2-5" data-title="Флоренция"></a>
+          <a class="c-tab__link" href="#c-tab__2-6" data-title="Пиза"></a>
+          <a class="c-tab__link" href="#c-tab__2-7" data-title="Неаполь"></a>
+          <a class="c-tab__link" href="#c-tab__2-8" data-title="Апулия"></a>
+          <a class="c-tab__link" href="#c-tab__2-9" data-title="Болонья"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__2-1">
+            <div class="c-slick c-slick__hotels">
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__2-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-6">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-7">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-8">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__2-9">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Популярные отели Италии - end -->
+
+    <!-- Популярные достопримечательности - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Популярные достопримечательности
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab c-tab--100vw">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__3-1" data-title="Италия"></a>
+          <a class="c-tab__link" href="#c-tab__3-2" data-title="Испания"></a>
+          <a class="c-tab__link" href="#c-tab__3-3" data-title="Португалия"></a>
+          <a class="c-tab__link" href="#c-tab__3-4" data-title="Бельгия"></a>
+          <a class="c-tab__link" href="#c-tab__3-5" data-title="Польша"></a>
+          <a class="c-tab__link" href="#c-tab__3-6" data-title="Венгрия"></a>
+          <a class="c-tab__link" href="#c-tab__3-7" data-title="Нидерланды"></a>
+          <a class="c-tab__link" href="#c-tab__3-8" data-title="Франция"></a>
+          <a class="c-tab__link" href="#c-tab__3-9" data-title="Хорватия"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__3-1">
+            <div class="c-slick c-slick__slideset">
+              {% include '../partials/popular_attractions.twig' %}
+              {% include '../partials/popular_attractions.twig' %}
+              {% include '../partials/popular_attractions.twig' %}
+              {% include '../partials/popular_attractions.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__3-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-6">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-7">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-8">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__3-9">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-row min-1152">
+      <div class="c-all">
+        <a class="c-all__link" href="javascript:void(0)">
+          Смотреть все
+        </a>
+      </div>
+    </div>
+    <!-- Популярные достопримечательности - end -->
+
+    <!-- Популярные экскурсии - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Популярные экскурсии
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-slick c-slick__popular-excursions">
+        {% include '../partials/popular_excursions.twig' %}
+        {% include '../partials/popular_excursions.twig' %}
+        {% include '../partials/popular_excursions.twig' %}
+        {% include '../partials/popular_excursions.twig' %}
+      </div>
+    </div>
+    <div class="l-row min-1152">
+      <div class="c-all">
+        <a class="c-all__link" href="javascript:void(0)">
+          Смотреть все
+        </a>
+      </div>
+    </div>
+    <!-- Популярные экскурсии - end -->
+
+    <!-- Отели Италии 5 звезд - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Отели Италии 5 звезд
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__23-1" data-title="Нью-Йорк"></a>
+          <a class="c-tab__link" href="#c-tab__23-2" data-title="Венеция"></a>
+          <a class="c-tab__link" href="#c-tab__23-3" data-title="Рим"></a>
+          <a class="c-tab__link" href="#c-tab__23-4" data-title="Милан"></a>
+          <a class="c-tab__link" href="#c-tab__23-5" data-title="Флоренция"></a>
+          <a class="c-tab__link" href="#c-tab__23-6" data-title="Пиза"></a>
+          <a class="c-tab__link" href="#c-tab__23-7" data-title="Неаполь"></a>
+          <a class="c-tab__link" href="#c-tab__23-8" data-title="Апулия"></a>
+          <a class="c-tab__link" href="#c-tab__23-9" data-title="Болонья"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__23-1">
+            <div class="c-slick c-slick__hotels">
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__23-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-6">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-7">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-8">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__23-9">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Отели Италии 5 звезд - end -->
+
+    <!-- Отели Италии 4 звезды - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Отели Италии 4 звезды
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__24-1" data-title="Нью-Йорк"></a>
+          <a class="c-tab__link" href="#c-tab__24-2" data-title="Венеция"></a>
+          <a class="c-tab__link" href="#c-tab__24-3" data-title="Рим"></a>
+          <a class="c-tab__link" href="#c-tab__24-4" data-title="Милан"></a>
+          <a class="c-tab__link" href="#c-tab__24-5" data-title="Флоренция"></a>
+          <a class="c-tab__link" href="#c-tab__24-6" data-title="Пиза"></a>
+          <a class="c-tab__link" href="#c-tab__24-7" data-title="Неаполь"></a>
+          <a class="c-tab__link" href="#c-tab__24-8" data-title="Апулия"></a>
+          <a class="c-tab__link" href="#c-tab__24-9" data-title="Болонья"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__24-1">
+            <div class="c-slick c-slick__hotels">
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__24-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-6">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-7">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-8">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__24-9">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Отели Италии 4 звезды - end -->
+
+    <!-- Недорогие отели Италии - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Недорогие отели Италии
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab">
+        <div class="c-tab__nav">
+          <a class="c-tab__link c-tab__link--active" href="#c-tab__22-1" data-title="Нью-Йорк"></a>
+          <a class="c-tab__link" href="#c-tab__22-2" data-title="Венеция"></a>
+          <a class="c-tab__link" href="#c-tab__22-3" data-title="Рим"></a>
+          <a class="c-tab__link" href="#c-tab__22-4" data-title="Милан"></a>
+          <a class="c-tab__link" href="#c-tab__22-5" data-title="Флоренция"></a>
+          <a class="c-tab__link" href="#c-tab__22-6" data-title="Пиза"></a>
+          <a class="c-tab__link" href="#c-tab__22-7" data-title="Неаполь"></a>
+          <a class="c-tab__link" href="#c-tab__22-8" data-title="Апулия"></a>
+          <a class="c-tab__link" href="#c-tab__22-9" data-title="Болонья"></a>
+        </div>
+        <div class="c-tab__content">
+          <div class="c-tab__item c-tab__item--active" id="c-tab__22-1">
+            <div class="c-slick c-slick__hotels">
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+              {% include '../partials/popular_hotels.twig' %}
+            </div>
+          </div>
+          <div class="c-tab__item" id="c-tab__22-2">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-3">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-4">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-5">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-6">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-7">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-8">
+            Контент...
+          </div>
+          <div class="c-tab__item" id="c-tab__22-9">
+            Контент...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Недорогие отели Италии - end -->
+
+    <!-- Интересное про Италию - start -->
+    <div class="l-row l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Интересное про Италию
+      </h2>
+    </div>
+    <div class="l-row">
+      <div class="c-gallery">
+        <div class="c-gallery__grid c-slick c-slick__gallery" id="c-gallery__grid">
+          <a class="c-gallery__item" href="images/gallery/1.jpg">
+            <img src="images/gallery/1-small.jpg" alt="image">
+          </a>
+          <a class="c-gallery__item" href="images/gallery/2.jpg">
+            <img src="images/gallery/2-small.jpg" alt="image">
+          </a>
+          <a class="c-gallery__item" href="images/gallery/3.jpg">
+            <img src="images/gallery/3-small.jpg" alt="image">
+          </a>
+        </div>
+        <div class="c-description c-description--gallery">
+          <div class="c-description__text">
+            <p>
+              Когда речь заходит о романтике, у многих в воображении вырисовывается Париж. Его улицы, которые пахнут жареными каштанами, изумительная архитектура и пышные сады приводят в восторг не только туристов, но и местных жителей. Ежегодно в Париж приезжает 45 миллионов человек, чтобы собственными глазами увидеть Монмартр, Нотр-Дам-де-Пари и скульптуру Венеры Милосской в Лувре. Некоторые отправляются сюда, чтобы вернуться домой в новом статусе жениха и невесты, ведь Эйфелева башня — одна из самых популярных локаций в мире, где отвечают “да” на разных языках мира.
+            </p>
+            <h3>
+              Далеко-далеко за словесными
+            </h3>
+            <p>
+              Когда речь заходит о романтике, у многих в воображении вырисовывается Париж. Его улицы, которые пахнут жареными каштанами, изумительная архитектура и пышные сады приводят в восторг не только туристов, но и местных жителей. Ежегодно в Париж приезжает 45 миллионов человек, чтобы собственными глазами увидеть Монмартр, Нотр-Дам-де-Пари и скульптуру Венеры Милосской в Лувре. Некоторые отправляются сюда, чтобы вернуться домой в новом статусе жениха и невесты, ведь Эйфелева башня — одна из самых популярных локаций в мире, где отвечают “да” на разных языках мира.
+            </p>
+            <h3>
+              Далеко-далеко за словесными
+            </h3>
+            <p>
+              Когда речь заходит о романтике, у многих в воображении вырисовывается Париж. Его улицы, которые пахнут жареными каштанами, изумительная архитектура и пышные сады приводят в восторг не только туристов, но и местных жителей. Ежегодно в Париж приезжает 45 миллионов человек, чтобы собственными глазами увидеть Монмартр, Нотр-Дам-де-Пари и скульптуру Венеры Милосской в Лувре. Некоторые отправляются сюда, чтобы вернуться домой в новом статусе жениха и невесты, ведь Эйфелева башня — одна из самых популярных локаций в мире, где отвечают “да” на разных языках мира.
+            </p>
+          </div>
+          <div class="c-description__more">
+            <div class="c-description__button">
+              <span class="c-description__button--read">
+                Читать все
+              </span>
+              <span class="c-description__button--collapse">
+                Свернуть
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Интересное про Италию - end -->
+
+    <!-- Последние новости про Италию - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Последние новости про Италию
+      </h2>
+      <a class="c-all__title" href="javascript:void(0)">
+        Смотреть все
+      </a>
+    </div>
+    <div class="l-row max-1151">
+      <div class="c-line"></div>
+    </div>
+    <div class="l-row">
+      <div class="c-tab">
+        <div class="c-tab__content c-tab__content--pt-0">
+          <div class="c-tab__item c-tab__item--active">
+            <div class="c-slick c-slick__latest-news">
+              {% include '../partials/latest_news.twig' %}
+              {% include '../partials/latest_news.twig' %}
+              {% include '../partials/latest_news.twig' %}
+              {% include '../partials/latest_news.twig' %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="l-row min-1152">
+      <div class="c-all">
+        <a class="c-all__link" href="javascript:void(0)">
+          Смотреть все
+        </a>
+      </div>
+    </div>
+    <!-- Последние новости про Италию - end -->
+
+    <!-- Отели возле аэропортов Италии - start -->
+    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+      <h2 class="c-title c-title--left-max-1151">
+        Отели возле аэропортов Италии
+      </h2>
+    </div>
+    <div class="l-row">
+      <div class="c-column c-column--4">
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+        <a class="c-column__item" href="javascript:void(0)">
+          Длинное название отеля
+        </a>
+      </div>
+    </div>
+    <!-- Отели возле аэропортов Италии - end -->
+
+  </div>
+</main>
+
+{% include '../partials/l-footer.twig' %}
+
+{% endblock %}

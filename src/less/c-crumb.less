@@ -1,0 +1,109 @@
+/* .c-crumb
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-crumb';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto;
+
+        @media (min-width: 1152px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        &__item {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        &__link {
+            color: @black;
+            font-size: 12px;
+            white-space: nowrap;
+            letter-spacing: 0.35px;
+            transition: color .3s;
+
+            @media (min-width: 768px) {
+                font-size: 14px;
+            }
+
+            &--current {
+                color: @black;
+                font-weight: 600;
+                pointer-events: none;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__separator {
+            display: flex;
+            align-items: center;
+            left: -3px;
+            height: 6px;
+            min-width: 6px;
+            margin: 0 10px;
+            list-style: none;
+            position: relative;
+            border-right: 1px solid @gray;
+            border-bottom: 1px solid @gray;
+            transform: rotate(-45deg);
+            background-color: rgba(0,0,0,0);
+
+            @media (min-width: 768px) {
+                margin: 0 16px;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--standart {
+            justify-content: flex-start;
+
+            @{r}__link {
+                color: #8593a2;
+
+                &--current {
+                    color: @black;
+                    font-weight: 400;
+                }
+            }
+
+            @{r}__separator {
+                border-right-color: #8593a2;
+                border-bottom-color: #8593a2;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+    .c-banner @{r} {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // z-index: 1;
+        height: @header-min-1152;
+        color: @white;
+        position: absolute;
+        border-top: 1px solid rgba(255, 255, 255, 0.23);
+
+        &__link {
+            color: @white;
+
+            &:hover {
+                color: @yellow;
+            }
+        }
+    }
+}

@@ -1,0 +1,307 @@
+{% extends '../layout.twig' %}
+
+{% block head_title %}Hotel without dates | Planet of Hotels{% endblock %}
+
+{% block body_class %}l-body{% endblock %}
+
+{% block body %}
+
+    <main class="l-main">
+        <div class="l-container min-1152">
+
+            <div class="c-grid c-grid--hotel">
+                <div class="c-grid__left"></div>
+                <div class="c-grid__right">
+                    <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-20 min-1152">
+                        <h2 class="c-title c-title--fs-24 c-title--left">
+                            Введите даты чтобы проверить наличие мест
+                        </h2>
+                    </div>
+                    <div class="l-row l-row--mt-20">
+                        <form class="c-modal__form">
+                            <div class="c-modal__form--row">
+                                <div class="c-modal__form--column">
+                                    <div class="c-modal__form--icon">
+                                        <img src="images/all/room__search-calendar.svg" alt="image">
+                                    </div>
+                                    <input type="text" placeholder="Дата заезда" required="">
+                                    <div class="c-modal__form--arrow">
+                                        <div class="c-modal__form--prev"></div>
+                                        <div class="c-modal__form--next"></div>
+                                    </div>
+                                </div>
+                                <div class="c-modal__form--column">
+                                    <div class="c-modal__form--icon">
+                                        <img src="images/all/room__search-calendar.svg" alt="image">
+                                    </div>
+                                    <input type="text" placeholder="Дата заезда" required="">
+                                    <div class="c-modal__form--arrow">
+                                        <div class="c-modal__form--prev"></div>
+                                        <div class="c-modal__form--next"></div>
+                                    </div>
+                                </div>
+                                <div class="c-modal__form--column c-modal__form--pr-0 c-modal__form--full">
+                                    <div class="c-modal__form--icon">
+                                        <img src="images/all/modal__bed.svg" alt="image">
+                                    </div>
+                                    <input type="text" placeholder="2 взрослых - 0 детей - 1 номер" required="">
+                                </div>
+                                <div class="c-modal__form--column c-modal--w-auto">
+                                    <button class="c-room__search--button c-button c-button--blue" type="submit">
+                                        <span class="c-button__inner">
+                                            Проверить наличие мест
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="l-row l-row--mt-20">
+                        <div class="c-room c-room--no-date">
+                            <a class="c-room__left" href="javascript:void(0)">
+                                <div class="c-room__photo">
+                                    <img src="images/all/room.jpg" alt="image">
+                                </div>
+                            </a>
+                            <div class="c-room__right">
+                                <div class="c-room__table">
+                                    <table>
+                                        <thead class="c-room__table--thead">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        Тип номера
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td" colspan="2">
+                                                    <div class="c-room__table--item">
+                                                        Гостей
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="c-room__table--tbody">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__title">
+                                                            Двухместный номер Делюкс с 1 кроватью
+                                                        </div>
+                                                        <div class="c-room__bed c-room--mt-10">
+                                                            1 односпальая кровать
+                                                            <div class="c-room__bed--img">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                            </div>
+                                                        </div>
+                                                        <a class="c-room__more c-room--mt-10" href="javascript:void(0)">
+                                                            Описание номера
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__table--guest">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item c-room__table--flex">
+                                                        <a class="c-room__table--button c-button c-button--green" href="javascript:void(0)">
+                                                            Показать цены
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-row l-row--mt-10">
+                        <div class="c-room c-room--no-date">
+                            <a class="c-room__left" href="javascript:void(0)">
+                                <div class="c-room__photo">
+                                    <img src="images/all/room.jpg" alt="image">
+                                </div>
+                            </a>
+                            <div class="c-room__right">
+                                <div class="c-room__table">
+                                    <table>
+                                        <thead class="c-room__table--thead">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        Тип номера
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td" colspan="2">
+                                                    <div class="c-room__table--item">
+                                                        Гостей
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="c-room__table--tbody">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__title">
+                                                            Двухместный номер Делюкс с 1 кроватью
+                                                        </div>
+                                                        <div class="c-room__bed c-room--mt-10">
+                                                            1 односпальая кровать
+                                                            <div class="c-room__bed--img">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                            </div>
+                                                        </div>
+                                                        <a class="c-room__more c-room--mt-10" href="javascript:void(0)">
+                                                            Описание номера
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__table--guest">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                            <span>+</span>
+                                                            <img class="c-room__table--h-10" src="images/all/room__user.svg" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item c-room__table--flex">
+                                                        <a class="c-room__table--button c-button c-button--green" href="javascript:void(0)">
+                                                            Показать цены
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-row l-row--mt-10">
+                        <div class="c-room c-room--no-date">
+                            <a class="c-room__left" href="javascript:void(0)">
+                                <div class="c-room__photo">
+                                    <img src="images/all/room.jpg" alt="image">
+                                </div>
+                            </a>
+                            <div class="c-room__right">
+                                <div class="c-room__table">
+                                    <table>
+                                        <thead class="c-room__table--thead">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        Тип номера
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td" colspan="2">
+                                                    <div class="c-room__table--item">
+                                                        Гостей
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="c-room__table--tbody">
+                                            <tr class="c-room__table--tr">
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__title">
+                                                            Двухместный номер Делюкс с 1 кроватью
+                                                        </div>
+                                                        <div class="c-room__bed c-room--mt-10">
+                                                            1 односпальая кровать
+                                                            <div class="c-room__bed--img">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                                <img src="images/all/modal__bed.svg" alt="image">
+                                                            </div>
+                                                        </div>
+                                                        <a class="c-room__more c-room--mt-10" href="javascript:void(0)">
+                                                            Описание номера
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item">
+                                                        <div class="c-room__table--guest">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                            <img src="images/all/room__user.svg" alt="image">
+                                                            <span>+</span>
+                                                            <img class="c-room__table--h-10" src="images/all/room__user.svg" alt="image">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="c-room__table--td">
+                                                    <div class="c-room__table--item c-room__table--flex">
+                                                        <a class="c-room__table--button c-button c-button--green" href="javascript:void(0)">
+                                                            Показать цены
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-row l-row--mt-20">
+                        <div class="c-citizen">
+                            <div class="c-citizen__row">
+                                <div class="c-citizen__title">
+                                    4 причины выбрать citizenM London Shoreditch
+                                </div>
+                            </div>
+                            <div class="c-citizen__row">
+                                <div class="c-citizen__column">
+                                    <div class="c-citizen__img">
+                                        <img src="images/all/citizen__1.svg" alt="image">
+                                    </div>
+                                    <div class="c-citizen__text">
+                                        Доступные<br>цены
+                                    </div>
+                                </div>
+                                <div class="c-citizen__column">
+                                    <div class="c-citizen__img">
+                                        <img src="images/all/citizen__2.svg" alt="image">
+                                    </div>
+                                    <div class="c-citizen__text">
+                                        Один из лучших вариантов,<br>выбранных нами в городе
+                                    </div>
+                                </div>
+                                <div class="c-citizen__column">
+                                    <div class="c-citizen__img">
+                                        <img src="images/all/citizen__3.svg" alt="image">
+                                    </div>
+                                    <div class="c-citizen__text">
+                                        Управляйте вашим<br>бронированиями онлайн
+                                    </div>
+                                </div>
+                                <div class="c-citizen__column">
+                                    <div class="c-citizen__img">
+                                        <img src="images/all/citizen__4.svg" alt="image">
+                                    </div>
+                                    <div class="c-citizen__text">
+                                        Отличные удобства<br>и расположение для пар
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+
+        </div>
+    </main>
+
+{% endblock %}

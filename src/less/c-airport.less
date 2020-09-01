@@ -1,0 +1,86 @@
+/* .c-airport
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-airport';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        @media (max-width: 1151px) {
+            overflow-x: auto;
+        }
+
+        @media (min-width: 1152px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            flex: none;
+            display: flex;
+            height: 100px;
+            padding: 16px;
+            margin-right: 10px;
+            border: 1px solid rgba(205, 210, 213, 0.47);
+            box-shadow: 0 10px 10px rgba(205, 210, 213, 0);
+            transition: .3s;
+
+            @media (min-width: 1152px) {
+                margin-top: 32px;
+                margin-right: 32px;
+                .mixin-grid(4, 32px);
+
+                &:hover {
+                    box-shadow: 0 10px 10px rgba(205, 210, 213, 0.47);
+                }
+            }
+        }
+
+        &__icon {
+            flex: none;
+            width: 42px;
+            height: 42px;
+            position: relative;
+            border-radius: 100%;
+            background-color: #eceff7;
+
+            .icon {
+                right: 0;
+                bottom: -4px;
+                color: #8593a2;
+                font-size: 36px;
+                position: absolute;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+
+        &__title {
+            color: @black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        &__text {
+            color: @black;
+            // font-weight: 300;
+        }
+
+        &__location {
+            color: #8593a2;
+            // font-weight: 300;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

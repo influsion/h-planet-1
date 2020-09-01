@@ -1,0 +1,1009 @@
+{% extends '../layout.twig' %}
+
+{% block head_title %}Avia | Planet of Hotels{% endblock %}
+
+{% block body_class %}l-body{% endblock %}
+
+{% block body %}
+
+    {% include '../partials/l-header.twig' %}
+
+    <div class="c-banner">
+        <picture class="c-banner__picture">
+            <img src="images/banners/2.jpg" alt="image">
+        </picture>
+        <div class="l-container">
+            <div class="c-banner__wrap">
+                <div class="c-banner__info c-banner__info--max-w-1080">
+                    <div class="c-tab c-tab--booking c-tab--difficult">
+                        <div class="c-tab__title">
+                            <h1 class="c-tab__title--h1">
+                                Поиск дешевых авиабилетов
+                            </h1>
+                            <div class="c-tab__title--sub min-1152">
+                                Мы подыщем для вас самые выгодные предложения на авиаперелеты
+                            </div>
+                        </div>
+                        <div class="c-tab__nav c-tab__nav--radio">
+                            <label class="c-tab__label" data-form="c-booking--difficult">
+                                <input type="radio" name="searchForm" checked>
+                                <span class="c-tab__label--radio"></span>
+                                Туда и обратно
+                            </label>
+                            <label class="c-tab__label" data-form="c-booking--one-way">
+                                <input type="radio" name="searchForm">
+                                <span class="c-tab__label--radio"></span>
+                                В одну сторону
+                            </label>
+                            <label class="c-tab__label" data-form="c-booking--complex">
+                                <input type="radio" name="searchForm">
+                                <span class="c-tab__label--radio"></span>
+                                Сложный маршрут
+                            </label>
+                        </div>
+                        <div class="c-tab__nav max-1151">
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Отели">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--bed-1"><use xlink:href="images/_sprite.svg#icon--bed-1"></use></svg>
+                                    Отели
+                                </div>
+                            </a>
+                            <a class="c-tab__link c-tab__link--active" href="javascript:void(0)" data-title="Авиабилеты">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                    Авиабилеты
+                                </div>
+                            </a>
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Аренда авто">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--car"><use xlink:href="images/_sprite.svg#icon--car"></use></svg>
+                                    Аренда авто
+                                </div>
+                            </a>
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Экскурсии">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--ticket"><use xlink:href="images/_sprite.svg#icon--ticket"></use></svg>
+                                    Экскурсии
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-tab__content">
+                            <div class="c-tab__item c-tab__item--active">
+                                <form class="c-booking c-booking--difficult c-form">
+                                    <div class="c-booking__column c-booking__column--from" data-title="Откуда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Откуда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-checkbox">
+                                                    <label class="c-checkbox__label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <span class="c-checkbox__icon"></span>
+                                                        <span class="c-checkbox__title">
+                                                            и аэропорты рядом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin"><use xlink:href="images/_sprite.svg#icon--pin"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан - Все аэропорты
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="c-booking__dropdown--item" href="javascript:void(0)">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--passport"><use xlink:href="images/_sprite.svg#icon--passport"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info c-booking__dropdown--arrow">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Думаете, куда бы съездить?
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Поиск «Куда угодно» покажет все доступные варианты
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--where" data-title="Куда">
+                                        <div class="c-booking__change">
+                                            <svg class="icon icon--change"><use xlink:href="images/_sprite.svg#icon--change"></use></svg>
+                                        </div>
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Куда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--when" data-title="Когда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Когда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar"><use xlink:href="images/_sprite.svg#icon--calendar"></use></svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--from" data-title="Откуда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Откуда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin"><use xlink:href="images/_sprite.svg#icon--pin"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin"><use xlink:href="images/_sprite.svg#icon--pin"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Итальянская Ривьера
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Аэропорт Рим
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Город - Лацио, Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--bed-2"><use xlink:href="images/_sprite.svg#icon--bed-2"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Intercontinental Rome
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--monastery"><use xlink:href="images/_sprite.svg#icon--monastery"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Колизей
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--where" data-title="Куда">
+                                        <div class="c-booking__change">
+                                            <svg class="icon icon--change"><use xlink:href="images/_sprite.svg#icon--change"></use></svg>
+                                        </div>
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Куда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin"><use xlink:href="images/_sprite.svg#icon--pin"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin"><use xlink:href="images/_sprite.svg#icon--pin"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Итальянская Ривьера
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane"><use xlink:href="images/_sprite.svg#icon--plane"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Аэропорт Рим
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Город - Лацио, Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--bed-2"><use xlink:href="images/_sprite.svg#icon--bed-2"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Intercontinental Rome
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--monastery"><use xlink:href="images/_sprite.svg#icon--monastery"></use></svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Колизей
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--when" data-title="Когда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Когда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar"><use xlink:href="images/_sprite.svg#icon--calendar"></use></svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__remove"></div>
+                                    </div>
+
+
+                                    <div class="c-booking__column c-booking__column--visit" data-title="Туда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Туда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar"><use xlink:href="images/_sprite.svg#icon--calendar"></use></svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--leaving" data-title="Обратно">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Обратно" autocomplete="off" required />
+                                            <svg class="icon icon--calendar"><use xlink:href="images/_sprite.svg#icon--calendar"></use></svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--add">
+                                        <div class="c-booking__input c-booking__add">
+                                            <svg class="icon icon--more"><use xlink:href="images/_sprite.svg#icon--more"></use></svg>
+                                            Добавить перелет
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--passengers" data-title="Пассажиры, класс">
+                                        <div class="c-booking__input">
+                                            <div class="c-booking__input--column">
+                                                <span id="c-booking__count--adult">1</span> взрослый, эконом
+                                            </div>
+                                            <svg class="icon icon--user"><use xlink:href="images/_sprite.svg#icon--user"></use></svg>
+                                            <span class="c-booking__input--close">
+                                                Готово
+                                            </span>
+                                        </div>
+                                        <div class="c-booking__dropdown" id="c-booking__count">
+                                            <div class="c-booking__dropdown--header c-booking__dropdown--passengers">
+                                                Пассажиры
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-booking__dropdown--title">
+                                                    Взрослые
+                                                    <small>
+                                                        Старше 16 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--adult"></a>
+                                                    <div class="c-booking__count--value">1</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--adult"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-booking__dropdown--title">
+                                                    Дети
+                                                    <small>
+                                                        От 2 -15 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--default"></a>
+                                                    <div class="c-booking__count--value">0</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--default"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h c-booking__dropdown--pb-10">
+                                                <div class="c-booking__dropdown--title">
+                                                    Младенцы
+                                                    <small>
+                                                        От 2 -15 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--default"></a>
+                                                    <div class="c-booking__count--value">0</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--default"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--header c-booking__dropdown--bt c-booking__dropdown--service">
+                                                Класс обслуживания
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                               <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass" checked>
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Эконом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                               <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Первый
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                               <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Бизнес
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                               <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Премиум-эконом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h c-booking__dropdown--pb-10">
+                                               <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Разные
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking__dropdown--done">
+                                                Готово
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--submit">
+                                        <button class="c-button c-button--blue min-1152" type="submit">
+                                            <span class="c-button__inner">
+                                                <svg class="icon icon--search"><use xlink:href="images/_sprite.svg#icon--search"></use></svg>
+                                            </span>
+                                        </button>
+                                        <button class="c-button c-button--blue max-1151" type="submit">
+                                            <span class="c-button__inner">
+                                                Найти билеты
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <label class="c-booking__flights-only c-tab__label c-tab__label--absolute min-1152">
+                                        <input type="checkbox" name="directFlightsOnly">
+                                        <span class="c-tab__label--radio"></span>
+                                        Только рейсы без пересадок
+                                    </label>
+                                    <div class="c-booking__reset c-tab__label--absolute min-1152">
+                                        <svg class="icon icon--clear"><use xlink:href="images/_sprite.svg#icon--clear"></use></svg>
+                                        Cбросить все
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="l-main">
+        <div class="l-container">
+
+            <!-- c-trigger - start -->
+            <div class="c-trigger c-trigger--banner">
+                <div class="c-trigger__wrap">
+                    <div class="c-trigger__item">
+                        <div class="c-trigger__icon">
+                            <svg class="icon icon--trigger-avia-1"><use xlink:href="images/_sprite.svg#icon--trigger-avia-1"></use></svg>
+                        </div>
+                        <div class="c-trigger__content">
+                            <div class="c-trigger__title">
+                                Choose a destination
+                            </div>
+                            <div class="c-trigger__text">
+                                Close your eyes and think about  where you’d like to go
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-trigger__item">
+                        <div class="c-trigger__icon">
+                            <svg class="icon icon--trigger-avia-2"><use xlink:href="images/_sprite.svg#icon--trigger-avia-2"></use></svg>
+                        </div>
+                        <div class="c-trigger__content">
+                            <div class="c-trigger__title">
+                                Compare price
+                            </div>
+                            <div class="c-trigger__text">
+                                To help you choose, we’ll show you a calendar with all our price
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-trigger__item">
+                        <div class="c-trigger__icon">
+                            <svg class="icon icon--trigger-avia-3"><use xlink:href="images/_sprite.svg#icon--trigger-avia-3"></use></svg>
+                        </div>
+                        <div class="c-trigger__content">
+                            <div class="c-trigger__title">
+                                Book your trip
+                            </div>
+                            <div class="c-trigger__text">
+                                Choose your flight and pack your bags because we’re off!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- c-trigger - end -->
+
+            <!-- Популярные города - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-40">
+                <h2 class="c-title c-title--left-max-1151">
+                    Популярные города
+                </h2>
+                <a class="c-all__title" href="javascript:void(0)">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="l-row l-row--mt-10 min-1152">
+                <div class="c-title c-title--sub">
+                    Поиск авиабилетов по самым популярным направлениям
+                </div>
+            </div>
+            <div class="l-row max-1151">
+                <div class="c-line"></div>
+            </div>
+            <div class="l-row">
+                <div class="c-slick c-slick__popular-cities c-slick--m-0-min--1152">
+                    {% include '../partials/popular_cities.twig' %}
+                    {% include '../partials/popular_cities.twig' %}
+                    {% include '../partials/popular_cities.twig' %}
+                    {% include '../partials/popular_cities.twig' %}
+                </div>
+            </div>
+            <div class="l-row min-1152">
+                <div class="c-all c-all--blue">
+                    <a class="c-all__link" href="javascript:void(0)">
+                        Смотреть все
+                    </a>
+                </div>
+            </div>
+            <!-- Популярные города - end -->
+
+            <!-- Карта с ценами - start -->
+            <div class="l-row l-row--mt-80 min-768">
+                <h2 class="c-title c-title--left-max-1151">
+                    Карта с ценами
+                </h2>
+            </div>
+            <div class="l-row l-row--mt-10 min-1152">
+                <div class="c-title c-title--sub">
+                    Мы подыщем для вас самые выгодные предложения на авиаперелеты
+                </div>
+            </div>
+            <div class="l-row l-row--max-767-mt-40">
+                <div class="c-map">
+                    <div class="c-map__world min-768">
+                        <img src="../images/map/world.svg" alt="image">
+                    </div>
+                    <a class="c-map__banner max-767" href="javascript:void(0)">
+                        <div class="c-map__banner--title">
+                            Карта с ценами
+                        </div>
+                        <div class="c-map__banner--text">
+                            Все направления
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="l-row min-768">
+                <div class="c-all c-all--blue">
+                    <a class="c-all__link" href="javascript:void(0)">
+                        Смотреть на карте
+                    </a>
+                </div>
+            </div>
+            <!-- Карта с ценами - end -->
+
+            <!-- Популярные маршруты - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+                <h2 class="c-title c-title--left-max-1151">
+                    Популярные маршруты
+                </h2>
+                <a class="c-all__title" href="javascript:void(0)">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="l-row l-row--mt-10 min-1152">
+                <div class="c-title c-title--sub">
+                    Поиск дешевых авиабилетов по наиболее часто запрашиваемым рейсам
+                </div>
+            </div>
+            <div class="l-row">
+                <div class="c-route c-slick c-slick__route c-slick--m-0-min--1152">
+                    {% include '../partials/c-route.twig' %}
+                    {% include '../partials/c-route.twig' %}
+                    {% include '../partials/c-route.twig' %}
+                    {% include '../partials/c-route.twig' %}
+                </div>
+            </div>
+            <div class="l-row min-1152">
+                <div class="c-all">
+                    <a class="c-all__link" href="javascript:void(0)">
+                        Смотреть все
+                    </a>
+                </div>
+            </div>
+            <!-- Популярные маршруты - end -->
+
+            <!-- Дешевые авиабилеты по странам - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+                <h2 class="c-title c-title--left-max-1151">
+                    Дешевые авиабилеты по странам
+                </h2>
+                <a class="c-all__title" href="javascript:void(0)">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="l-row l-row--mt-10 min-1152">
+                <div class="c-title c-title--sub">
+                    Поиск авиабилетов по самым популярным направлениям
+                </div>
+            </div>
+            <div class="l-row max-1151">
+                <div class="c-line"></div>
+            </div>
+            <div class="l-row">
+                <div class="c-slick--100vw">
+                    <div class="c-slick c-slick__slideset">
+                        {% include '../partials/popular_attractions.twig' %}
+                        {% include '../partials/popular_attractions.twig' %}
+                        {% include '../partials/popular_attractions.twig' %}
+                        {% include '../partials/popular_attractions.twig' %}
+                    </div>
+                </div>
+            </div>
+            <div class="l-row min-1152">
+                <div class="c-all">
+                    <a class="c-all__link" href="javascript:void(0)">
+                        Смотреть все
+                    </a>
+                </div>
+            </div>
+            <!-- Дешевые авиабилеты по странам - end -->
+
+            <!-- Авиакомпании - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+                <h2 class="c-title c-title--left-max-1151">
+                    Авиакомпании
+                </h2>
+                <a class="c-all__title" href="javascript:void(0)">
+                    Смотреть все
+                </a>
+            </div>
+            <div class="l-row l-row--mt-10 min-1152">
+                <div class="c-title c-title--sub">
+                    Поиск авиабилетов по самым популярным направлениям
+                </div>
+            </div>
+            <div class="l-row">
+                <div class="c-avia c-slick c-slick__avia c-slick--m-0">
+                    {% include '../partials/c-avia.twig' %}
+                    {% include '../partials/c-avia.twig' %}
+                </div>
+            </div>
+            <div class="l-row min-1152">
+                <div class="c-all">
+                    <a class="c-all__link" href="javascript:void(0)">
+                        Смотреть все
+                    </a>
+                </div>
+            </div>
+            <!-- Авиакомпании - end -->
+
+            <!-- Любите путешествовать? Подписывайтесь! - start -->
+            <div class="l-row l-row--mt-80 min-1152">
+                <div class="c-title">
+                    Любите путешествовать? Подписывайтесь!
+                </div>
+            </div>
+            <div class="l-row l-row--max-767-mt-40">
+                <div class="c-promo">
+                    <div class="c-promo__item">
+                        <div class="c-promo__icon">
+                            <svg class="icon icon--promo-1"><use xlink:href="images/_sprite.svg#icon--promo-1"></use></svg>
+                        </div>
+                        <div class="c-promo__content">
+                            <div class="c-promo__title">
+                                Еще не зарегистрированны?
+                            </div>
+                            <div class="c-promo__text">
+                                Мы приготовали для вас секретные предложения!
+                                <br>
+                                Войдите в аккаунт и получите доступ к скидкам до 50%
+                            </div>
+                            <div class="c-promo__buttons">
+                                <a class="c-button c-button--blue" href="javascript:void(0)">
+                                    <span class="c-button__inner">
+                                        Вход
+                                    </span>
+                                </a>
+                                <a class="c-button c-button--border c-button--ml-20" href="javascript:void(0)">
+                                    <span class="c-button__inner">
+                                        Регистрация
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-promo__item">
+                        <div class="c-promo__icon">
+                            <svg class="icon icon--promo-2"><use xlink:href="images/_sprite.svg#icon--promo-2"></use></svg>
+                        </div>
+                        <div class="c-promo__content">
+                            <div class="c-promo__title">
+                                Подпишись на эксклюзивные новости!
+                            </div>
+                            <div class="c-promo__text">
+                                Вы узнаете, о специальных предложениях, последних новостях о путешевствиях, указав электронную почту
+                            </div>
+                            <form class="c-promo__form c-form">
+                                <input type="email" placeholder="E-mail" required>
+                                <button class="c-button c-button--blue" type="submit">
+                                    <span class="c-button__inner">
+                                        Подписаться
+                                        <svg class="icon icon--submit"><use xlink:href="images/_sprite.svg#icon--submit"></use></svg>
+                                    </span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Любите путешествовать? Подписывайтесь! - end -->
+
+            <!-- Часто задаваемые вопросы - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-80">
+                <h2 class="c-title c-title--left-max-1151">
+                    Часто задаваемые вопросы
+                 </h2>
+            </div>
+            <div class="l-row">
+                <div class="c-accordion c-accordion--faq">
+                    <div class="c-accordion__column">
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно ли вернуть авиабилет?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно купить авиабилет с открытой датой вылета?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно ли изменить даты вылета/прилета?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-accordion__column">
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно ли вернуть авиабилет?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно купить авиабилет с открытой датой вылета?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Можно ли изменить даты вылета/прилета?
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-accordion c-accordion--faq c-accordion--open">
+                    <div class="c-accordion__column">
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Как найти авиабилеты со скидкой онлайн
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Клиентская поддержка
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Самые дешевые авиабилеты
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-accordion__column">
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Как найти авиабилеты со скидкой онлайн
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Клиентская поддержка
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                        <div class="c-accordion__item">
+                            <div class="c-accordion__title">
+                                Самые дешевые авиабилеты
+                            </div>
+                            <div class="c-accordion__content">
+                                Информация об условиях возврата билета указана на сайтах конкретных агентств и авиакомпаний. Узнать обо всех нюансах вы можете в процессе осуществления бронирования. Как правило, возможность возврата зависит от конкретного  авиаперевозчика, тарифа, политики компании, а также периода, в который вы хотите совершить возврат.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Часто задаваемые вопросы - end -->
+
+        </div>
+    </main>
+
+    {% include '../partials/l-footer.twig' %}
+
+{% endblock %}

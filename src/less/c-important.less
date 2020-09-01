@@ -1,0 +1,62 @@
+/* .c-important
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-important';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #f3f5f7;
+
+        &__img {
+            display: flex;
+        }
+
+        &__content {
+            padding-left: 20px;
+        }
+
+        &__title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--great-price {
+            min-height: 70px;
+            padding: 10px 20px;
+            background-color: #fff7f4;
+            border: 1px solid rgba(247, 145, 106, 0.51);
+
+            @{r}__title {
+                font-size: 18px;
+            }
+
+            @{r}__text {
+                font-size: 12px;
+            }
+        }
+
+        &--places {
+            min-height: 70px;
+            padding: 10px 20px;
+            background-color: #f3f5f7;
+            border: 1px solid rgba(27, 160, 255, 0.51);
+
+            @{r}__title {
+                font-size: 18px;
+            }
+
+            @{r}__text {
+                font-size: 12px;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

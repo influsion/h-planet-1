@@ -1,0 +1,104 @@
+/* .c-nav
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-nav';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: none;
+
+        @media (min-width: 1152px) {
+            display: flex;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+            color: @white;
+            font-weight: 300;
+            line-height: 1.2;
+            margin-right: 20px;
+            transition: color .3s;
+
+            @media (min-width: 1280px) {
+                margin-right: 40px;
+            }
+
+            &:hover {
+                color: @yellow;
+            }
+        }
+
+        &__menu {
+            border-top: 1px solid #e6e9ee;
+
+            &--item {
+                display: flex;
+                height: 60px;
+                border-bottom: 1px solid #e6e9ee;
+            }
+
+            &--link {
+                display: flex;
+                align-items: center;
+                color: @black;
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: .3s;
+
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: @purple;
+                }
+            }
+
+            &--more {
+                align-self: center;
+                color: @black;
+                font-size: 12px;
+                cursor: pointer;
+                position: relative;
+                padding: 6px 10px;
+                padding-right: 20px;
+                text-transform: uppercase;
+                background-color: @gray-light;
+                transition: .3s;
+
+                &:after,
+                &:before {
+                    top: 0;
+                    bottom: 0;
+                    right: 10px;
+                    width: 1px;
+                    height: 7px;
+                    content: '';
+                    margin: auto;
+                    position: absolute;
+                    background-color: currentColor;
+                    transition: 0.3s;
+                }
+
+                &:after {
+                    width: 7px;
+                    height: 1px;
+                    right: 7px;
+                }
+
+                &:hover {
+                    background-color: darken(@gray-light, 5%);
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

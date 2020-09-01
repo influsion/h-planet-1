@@ -1,0 +1,97 @@
+/* .c-watched
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-watched';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+
+        &__item {
+            display: flex;
+            color: @black;
+            margin-top: 10px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:hover {
+
+                @{r}__title {
+                    color: @blue;
+                }
+            }
+        }
+
+        &__img {
+            flex: none;
+            width: 118px;
+            min-height: 118px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &__content {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #e6e9ee;
+
+            > * {
+                margin-top: 10px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.2;
+            transition: .3s;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+        }
+
+        &__tag {
+            display: flex;
+            align-items: center;
+            height: 15px;
+            font-size: 10px;
+            padding: 0 2px;
+            margin-right: 10px;
+            white-space: nowrap;
+            box-shadow: 0 0 3px 0 rgba(197, 205, 212, 0.73);
+        }
+
+        &__star {
+            display: flex;
+            align-items: center;
+
+            &--item {
+                display: flex;
+                color: @yellow;
+                font-size: 12px;
+                margin-right: 2px;
+            }
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

@@ -1,0 +1,182 @@
+/* .c-feedback
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-feedback';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        padding-bottom: 32px;
+        
+        &__block {
+
+            &:after {
+                width: 100%;
+                height: 1px;
+                content: '';
+                margin: 16px 0;
+                display: block;
+                background-color: #eaedf2;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
+        }
+
+        &__row {
+            display: flex;
+            margin-top: 10px;
+            
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        &__column {
+            padding-right: 16px;
+
+            &:last-child {
+                padding-right: 0;
+            }
+
+            &:first-child {
+                flex-grow: 1;
+            }
+        }
+
+        &__name {
+
+        }
+
+        &__date {
+            color: #8593a2;
+            font-size: 12px;
+        }
+
+        &__title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &__plus {
+            height: 16px;
+            min-width: 16px;
+            margin-top: 2px;
+            position: relative;
+            border-radius: 100%;
+            background-color: #44b759;
+
+            &:after,
+            &:before {
+                top: 4px;
+                left: 4px;
+                right: 4px;
+                bottom: 4px;
+                height: 1px;
+                content: '';
+                margin: auto;
+                position: absolute;
+                background-color: #ffffff;
+            }
+
+            &:after {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__minus {
+            height: 16px;
+            min-width: 16px;
+            margin-top: 2px;
+            border: 1px solid;
+            position: relative;
+            border-radius: 100%;
+            
+            &:before {
+                top: 4px;
+                left: 4px;
+                right: 4px;
+                bottom: 4px;
+                height: 1px;
+                content: '';
+                margin: auto;
+                position: absolute;
+                background-color: currentColor;
+            }
+        }
+
+        &__text {
+            padding-left: 10px;
+        }
+
+        &__more {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 600;
+            
+            &:after {
+                width: 6px;
+                height: 6px;
+                content: '';
+                margin-top: -2px;
+                margin-left: 6px;
+                border-right: 2px solid;
+                border-bottom: 2px solid;
+                transform: rotate(45deg);
+            }
+        }
+        
+        &__rating {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            &--number {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                color: #ffffff;
+                font-size: 12px;
+                line-height: 1;
+                font-weight: 900;
+                padding-top: 4px;
+                position: relative;
+                border-radius: 6px;
+                border-bottom-left-radius: 0;
+                background-color: #1ba0ff;
+            }
+
+            &--logo {
+                display: flex;
+                max-width: 60px;
+                max-height: 30px;
+                margin-top: 6px;
+            }
+
+            &--text {
+                font-size: 10px;
+                line-height: 1.2;
+                margin-top: 6px;
+                text-align: right;
+            }
+
+            &--green {
+                background-color: #34e1a2;
+            }
+
+            &--dark-blue {
+                background-color: #033580;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

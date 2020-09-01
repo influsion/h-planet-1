@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11.962" height="19.703" viewBox="0 0 11.962 19.703">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#1ba0ff}
+        </style>
+    </defs>
+    <g id="prefix__Icon_copy" data-name="Icon copy" transform="translate(-8 -2)">
+        <path id="prefix__Path_1131" d="M17.222 2A4.227 4.227 0 0 0 13 6.222v5.63a4.243 4.243 0 0 0 1.7 3.388.7.7 0 1 0 .841-1.128 2.792 2.792 0 0 1-1.136-2.26v-5.63a2.815 2.815 0 1 1 5.63 0v5.63a2.792 2.792 0 0 1-1.121 2.248.7.7 0 1 0 .848 1.124 4.192 4.192 0 0 0 1.682-3.373V6.222A4.227 4.227 0 0 0 17.222 2z" class="prefix__cls-1" data-name="Path 1131" transform="translate(-1.482)"/>
+        <path id="prefix__Path_1132" d="M14.768 11.149a.7.7 0 1 0-.849 1.123 2.793 2.793 0 0 1 1.119 2.246v5.63a2.815 2.815 0 1 1-5.63 0v-5.63a2.794 2.794 0 0 1 1.126-2.253.7.7 0 0 0-.845-1.125A4.19 4.19 0 0 0 8 14.518v5.63a4.222 4.222 0 1 0 8.444 0v-5.63a4.192 4.192 0 0 0-1.677-3.369z" class="prefix__cls-1" data-name="Path 1132" transform="translate(0 -2.667)"/>
+    </g>
+</svg>

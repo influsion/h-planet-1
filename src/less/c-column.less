@@ -1,0 +1,46 @@
+/* .c-column
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-column';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+
+        }
+
+        [href] {
+            color: @black;
+            padding: 5px 0;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--4 {
+
+            @{r}__item {
+
+                @media (max-width: 767px) {
+                    margin-right: 20px;
+                    .mixin-grid(2, 20px);
+                }
+
+                @media (min-width: 768px) {
+                    margin-right: 40px;
+                    .mixin-grid(4, 40px);
+                }
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

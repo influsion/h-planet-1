@@ -1,0 +1,124 @@
+/* .l-main
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.l-main';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        flex: 1 0 auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @media (min-width: 1152px) {
+            padding-bottom: 80px;
+        }
+
+        &__left {
+            width: 100%;
+            left: -110%;
+            position: absolute;
+
+            @media (min-width: 768px) {
+                left: auto;
+                width: 220px;
+                position: relative;
+            }
+
+            @media (min-width: 1152px) {
+                width: 320px;
+            }
+
+            &--reverse {
+                width: 100%;
+
+                @media (min-width: 768px) {
+                    width: calc(~ '100% - 220px');
+                    padding-right: 40px;
+                }
+
+                @media (min-width: 1152px) {
+                    width: calc(~ '100% - 320px');
+                }
+            }
+
+            &--min-1152 {
+
+                @media (max-width: 1151px) {
+                    width: 100%;
+                    left: -110%;
+                    position: absolute;
+
+                    ~ @{r}__right {
+                        width: 100%;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+        &__right {
+            width: 100%;
+
+            @media (min-width: 768px) {
+                width: calc(~ '100% - 220px');
+                padding-left: 40px;
+            }
+
+            @media (min-width: 1152px) {
+                width: calc(~ '100% - 320px');
+            }
+
+            &--reverse {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-top: 40px;
+
+                @media (min-width: 768px) {
+                    width: 220px;
+                    margin-top: 0;
+                }
+
+                @media (min-width: 1152px) {
+                    width: 320px;
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+        &--pt-0 {
+            padding-top: 0;
+        }
+
+        &--pt-40 {
+            padding-top: 20px;
+
+            @media (min-width: 768px) {
+                padding-top: 40px;
+            }
+        }
+
+        &--pr-180 {
+
+            @media (min-width: 1366px) {
+                padding-right: 42px;
+            }
+
+            @media (min-width: 1440px) {
+                padding-right: 180px;
+            }
+        }
+
+        &--max-1151-pt-0 {
+
+            @media (max-width: 1151px) {
+                padding-top: 0;
+            }
+        }
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

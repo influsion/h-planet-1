@@ -1,0 +1,114 @@
+/* .c-car
+---------------------------------------------------------------*/
+& {
+    @r: ~ '.c-car';
+
+    // base
+    //-----------------------------------------------------------
+    @{r} {
+        display: flex;
+
+        @media (max-width: 1151px) {
+            justify-content: space-between;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        @media (min-width: 1152px) {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            color: inherit;
+            transition: .3s;
+
+            @media (max-width: 1151px) {
+                min-width: 120px;
+                max-width: 120px;
+                margin-right: 20px;
+            }
+
+            @media (min-width: 1152px) {
+                margin-top: 40px;
+                margin-right: 40px;
+                .mixin-grid(6, 40px);
+
+                &:hover {
+                    box-shadow: 0 0 0 10px #fff, 0 0 10px 10px rgba(0,0,0,.1);
+                }
+            }
+        }
+
+        &__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__title{
+            flex-grow: 1;
+            margin-top: 10px;
+            line-height: 1.2;
+            font-weight: 900;
+
+            @media (min-width: 1152px) {
+                font-size: 18px;
+            }
+        }
+
+        &__price {
+            margin-top: 6px;
+            font-weight: 900;
+
+            @media (min-width: 1152px) {
+                font-size: 18px;
+            }
+        }
+
+        &__rating {
+            display: flex;
+            align-items: flex-end;
+
+            &--logo {
+                flex: none;
+                margin-right: 10px;
+            }
+
+            &--number {
+                padding: 5px;
+                color: @white;
+                line-height: 1;
+                font-size: 10px;
+                font-weight: 600;
+                position: relative;
+                padding-bottom: 2px;
+                background-color: @blue;
+
+                &:before {
+                    width: 0;
+                    height: 0;
+                    bottom: 0;
+                    right: 100%;
+                    content: '';
+                    position: absolute;
+                    border-bottom: 4px solid @blue;
+                    border-left: 4px solid rgba(0,0,0,0);
+                }
+            }
+        }
+
+        // modifier
+        //-------------------------------------------------------
+    }
+
+    // influence
+    //-----------------------------------------------------------
+}

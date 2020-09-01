@@ -1,0 +1,164 @@
+/* reset
+---------------------------------------------------------------*/
+@charset "UTF-8";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+  text-size-adjust: none;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+img {
+  flex: none;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+b {
+  font-weight: 600;
+}
+
+svg:not(:root) {
+  width: 1em;
+  height: 1em;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  user-select: none;
+  fill: currentColor;
+  pointer-events: none;
+  display: inline-flex;
+}
+
+[href] {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[href^="tel"] {
+  @media (min-width: 768px) {
+    pointer-events: none;
+  }
+}
+
+iframe {
+  border: 0;
+}
+
+textarea,
+[type="url"],
+[type="text"],
+[type="email"],
+[type="search"],
+[type="password"] {
+  border: 0;
+  margin: 0;
+  width: 100%;
+  color: inherit;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: inherit;
+  font-family: inherit;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0);
+
+  &:-webkit-autofill {
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+  }
+
+  @-webkit-keyframes autofill {
+    to {
+      background: transparent;
+    }
+  }
+}
+
+textarea {
+  margin: 0;
+  resize: none;
+  overflow: auto;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+[type="password"] {
+  letter-spacing: 5px;
+  font-family: verdana, sans-serif;
+}
+
+[type="search"] {
+  &::-ms-clear {
+    display: none;
+  }
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+button,
+.c-button,
+[type="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 0;
+  appearance: none;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transform: translate3d(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
