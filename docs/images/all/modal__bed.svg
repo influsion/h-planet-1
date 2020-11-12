@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.45" height="15.902" viewBox="0 0 22.45 15.902">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#444f5e}
+        </style>
+    </defs>
+    <g id="prefix__bed_5_" data-name="bed (5)" transform="translate(0 -74.667)">
+        <g id="prefix__Group_163" data-name="Group 163" transform="translate(0 74.667)">
+            <g id="prefix__Group_162" data-name="Group 162">
+                <path id="prefix__Path_1120" d="M43.135 80.28h2.339a.467.467 0 0 1-.454-.581l.291-1.163a1.4 1.4 0 0 1 1.361-1.063h3.011a1.4 1.4 0 0 1 1.4 1.4v.935a.468.468 0 0 1-.468.468h2.806a.468.468 0 0 1-.468-.468v-.935a1.4 1.4 0 0 1 1.4-1.4h3.011a1.4 1.4 0 0 1 1.361 1.063l.291 1.163a.467.467 0 0 1-.454.581h2.339a.468.468 0 0 0 .468-.468v-2.806a2.342 2.342 0 0 0-2.339-2.339H45.006a2.342 2.342 0 0 0-2.339 2.339v2.806a.468.468 0 0 0 .468.468z" class="prefix__cls-1" data-name="Path 1120" transform="translate(-40.796 -74.667)"/>
+                <path id="prefix__Path_1121" d="M20.112 224H2.339A2.342 2.342 0 0 0 0 226.339v6.548a.468.468 0 1 0 .935 0v-1.4h20.58v1.4a.468.468 0 1 0 .935 0v-6.548A2.342 2.342 0 0 0 20.112 224zm1.4 6.548H.935v-.935h20.58v.935z" class="prefix__cls-1" data-name="Path 1121" transform="translate(0 -217.452)"/>
+            </g>
+        </g>
+    </g>
+</svg>

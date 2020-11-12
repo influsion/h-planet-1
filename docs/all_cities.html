@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>All cities | Planet of Hotels</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="l-body">
+
+
+    <header class="l-header">
+        <div class="l-container">
+            <div class="l-header__wrap">
+                <a class="c-logo" href="index.html">
+                    <svg class="icon icon--logo">
+                        <use xlink:href="images/_sprite.svg#icon--logo"></use>
+                    </svg>
+                </a>
+
+
+                <!-- c-menu - start -->
+                <a class="c-menu__button" href="#c-menu"></a>
+                <nav class="c-menu" id="c-menu">
+                    <div class="c-menu__panel">
+                        <div class="c-menu__panel--close"></div>
+                    </div>
+                    <div class="c-menu__list">
+                        <div class="c-menu__item">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                Отели
+                            </a>
+                        </div>
+                        <div class="c-menu__item">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                Авто
+                            </a>
+                        </div>
+                        <div class="c-menu__item">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                Авиабилеты
+                            </a>
+                        </div>
+                        <div class="c-menu__item">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                Экскурсии
+                            </a>
+                        </div>
+                        <div class="c-menu__item c-menu__item--parent">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                Путеводитель
+                            </a>
+                            <div class="c-menu__dropdown">
+                                <a class="c-menu__link c-menu__link--2" href="javascript:void(0)">
+                                    Направления
+                                </a>
+                                <a class="c-menu__link c-menu__link--2" href="javascript:void(0)">
+                                    Достопримечательности
+                                </a>
+                                <a class="c-menu__link c-menu__link--2" href="javascript:void(0)">
+                                    Публикации
+                                </a>
+                                <a class="c-menu__link c-menu__link--2" href="javascript:void(0)">
+                                    Экскурсии
+                                </a>
+                            </div>
+                        </div>
+                        <div class="c-menu__item c-menu__add">
+                            <a class="c-menu__link c-menu__link--1" href="#c-choice--language">
+                                <span class="c-menu__link--text">
+                                    Сменить язык
+                                </span>
+                                <span class="c-menu__link--choice" data-choice="language">
+                                    RU
+                                </span>
+                            </a>
+                        </div>
+                        <div class="c-menu__item c-menu__add">
+                            <a class="c-menu__link c-menu__link--1" href="#c-choice--currency">
+                                <span class="c-menu__link--text">
+                                    Сменить валюту
+                                </span>
+                                <span class="c-menu__link--choice" data-choice="currency">
+                                    UAH
+                                </span>
+                            </a>
+                        </div>
+                        <div class="c-menu__item c-menu__add">
+                            <a class="c-menu__link c-menu__link--1" href="javascript:void(0)">
+                                <span class="c-menu__link--text">
+                                    Войдите или создайте профиль
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+                <!-- c-menu - end -->
+
+
+                <!-- c-choice (currency) - start -->
+                <div class="c-choice c-choice--currency" id="c-choice--currency">
+                    <div class="c-choice__panel">
+                        <div class="c-choice__panel--back"></div>
+                        <div class="c-choice__panel--title">
+                            Сменить валюту
+                        </div>
+                        <div class="c-choice__panel--close"></div>
+                    </div>
+                    <div class="c-choice__selected" data-choice="currency">
+                        UAH
+                    </div>
+                    <div class="c-choice__dropdown">
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                AMD
+                            </span>
+                            <span class="c-choice__link--title">
+                                Армянский драм
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                AUD
+                            </span>
+                            <span class="c-choice__link--title">
+                                Австралийский доллар
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                BYN
+                            </span>
+                            <span class="c-choice__link--title">
+                                Белорусский рубль
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                EUR
+                            </span>
+                            <span class="c-choice__link--title">
+                                Евро
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                GBP
+                            </span>
+                            <span class="c-choice__link--title">
+                                Фунт стерлингов
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                KGS
+                            </span>
+                            <span class="c-choice__link--title">
+                                Киргизский сом
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                KZT
+                            </span>
+                            <span class="c-choice__link--title">
+                                Казахский тенге
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                RUB
+                            </span>
+                            <span class="c-choice__link--title">
+                                Российский рубль
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                TJS
+                            </span>
+                            <span class="c-choice__link--title">
+                                Таджикский сомони
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                TMT
+                            </span>
+                            <span class="c-choice__link--title">
+                                Туркменский манат
+                            </span>
+                        </span>
+                        <span class="c-choice__link c-choice__link--check">
+                            <span class="c-choice__link--abbr">
+                                UAH
+                            </span>
+                            <span class="c-choice__link--title">
+                                Украинская гривна
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                AMD
+                            </span>
+                            <span class="c-choice__link--title">
+                                Армянский драм
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                AUD
+                            </span>
+                            <span class="c-choice__link--title">
+                                Австралийский доллар
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                BYN
+                            </span>
+                            <span class="c-choice__link--title">
+                                Белорусский рубль
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                EUR
+                            </span>
+                            <span class="c-choice__link--title">
+                                Евро
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                GBP
+                            </span>
+                            <span class="c-choice__link--title">
+                                Фунт стерлингов
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                KGS
+                            </span>
+                            <span class="c-choice__link--title">
+                                Киргизский сом
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                KZT
+                            </span>
+                            <span class="c-choice__link--title">
+                                Казахский тенге
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                RUB
+                            </span>
+                            <span class="c-choice__link--title">
+                                Российский рубль
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                TJS
+                            </span>
+                            <span class="c-choice__link--title">
+                                Таджикский сомони
+                            </span>
+                        </span>
+                        <span class="c-choice__link">
+                            <span class="c-choice__link--abbr">
+                                TMT
+                            </span>
+                            <span class="c-choice__link--title">
+                                Туркменский манат
+                            </span>
+                        </span>
+                        <span class="c-choice__link c-choice__link--check">
+                            <span class="c-choice__link--abbr">
+                                UAH
+                            </span>
+                            <span class="c-choice__link--title">
+                                Украинская гривна
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- c-choice (currency) - end -->
+
+
+                <!-- c-choice (language) - start -->
+                <div class="c-choice c-choice--language" id="c-choice--language">
+                    <div class="c-choice__panel">
+                        <div class="c-choice__panel--back"></div>
+                        <div class="c-choice__panel--title">
+                            Сменить язык
+                        </div>
+                        <div class="c-choice__panel--close"></div>
+                    </div>
+                    <div class="c-choice__selected" data-choice="language">
+                        RU
+                    </div>
+                    <div class="c-choice__dropdown">
+                        <a class="c-choice__link" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                EN
+                            </div>
+                            <div class="c-choice__link--title">
+                                English
+                            </div>
+                        </a>
+                        <a class="c-choice__link" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                FR
+                            </div>
+                            <div class="c-choice__link--title">
+                                Français
+                            </div>
+                        </a>
+                        <a class="c-choice__link" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                DE
+                            </div>
+                            <div class="c-choice__link--title">
+                                Deutsch
+                            </div>
+                        </a>
+                        <a class="c-choice__link" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                IT
+                            </div>
+                            <div class="c-choice__link--title">
+                                Italiano
+                            </div>
+                        </a>
+                        <a class="c-choice__link c-choice__link--check" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                RU
+                            </div>
+                            <div class="c-choice__link--title">
+                                Русский
+                            </div>
+                        </a>
+                        <a class="c-choice__link" href="javascript:void(0)">
+                            <div class="c-choice__link--abbr">
+                                ES
+                            </div>
+                            <div class="c-choice__link--title">
+                                Espanol
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- c-choice (language) - end -->
+
+
+                <a class="c-login__link" href="javascript:void(0)">
+                    <svg class="icon icon--login">
+                        <use xlink:href="images/_sprite.svg#icon--login"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="c-banner c-banner--70vh">
+        <picture class="c-banner__picture">
+            <img src="images/banners/2.jpg" alt="image">
+        </picture>
+        <div class="l-container">
+            <div class="c-banner__wrap">
+                <div class="c-banner__info c-banner__info--max-w-1080">
+                    <div class="c-tab c-tab--booking c-tab--difficult">
+                        <div class="c-tab__title">
+                            <h1 class="c-tab__title--h1">
+                                Поиск дешевых авиабилетов в Лондон
+                            </h1>
+                            <div class="c-tab__title--sub min-1152">
+                                Мы подыщем для вас самые выгодные предложения на авиаперелеты
+                            </div>
+                        </div>
+                        <div class="c-tab__nav c-tab__nav--radio">
+                            <label class="c-tab__label" data-form="c-booking--difficult">
+                                <input type="radio" name="searchForm" checked>
+                                <span class="c-tab__label--radio"></span>
+                                Туда и обратно
+                            </label>
+                            <label class="c-tab__label" data-form="c-booking--one-way">
+                                <input type="radio" name="searchForm">
+                                <span class="c-tab__label--radio"></span>
+                                В одну сторону
+                            </label>
+                            <label class="c-tab__label" data-form="c-booking--complex">
+                                <input type="radio" name="searchForm">
+                                <span class="c-tab__label--radio"></span>
+                                Сложный маршрут
+                            </label>
+                        </div>
+                        <div class="c-tab__nav max-1151">
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Отели">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--bed-1">
+                                        <use xlink:href="images/_sprite.svg#icon--bed-1"></use>
+                                    </svg>
+                                    Отели
+                                </div>
+                            </a>
+                            <a class="c-tab__link c-tab__link--active" href="javascript:void(0)" data-title="Авиабилеты">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--plane">
+                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                    </svg>
+                                    Авиабилеты
+                                </div>
+                            </a>
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Аренда авто">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--car">
+                                        <use xlink:href="images/_sprite.svg#icon--car"></use>
+                                    </svg>
+                                    Аренда авто
+                                </div>
+                            </a>
+                            <a class="c-tab__link" href="javascript:void(0)" data-title="Экскурсии">
+                                <div class="c-tab__link--inner">
+                                    <svg class="icon icon--ticket">
+                                        <use xlink:href="images/_sprite.svg#icon--ticket"></use>
+                                    </svg>
+                                    Экскурсии
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-tab__content">
+                            <div class="c-tab__item c-tab__item--active">
+                                <form class="c-booking c-booking--difficult c-form">
+                                    <div class="c-booking__column c-booking__column--from" data-title="Откуда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Откуда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-checkbox">
+                                                    <label class="c-checkbox__label">
+                                                        <input type="checkbox" name="checkbox">
+                                                        <span class="c-checkbox__icon"></span>
+                                                        <span class="c-checkbox__title">
+                                                            и аэропорты рядом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin">
+                                                        <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан - Все аэропорты
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="c-booking__dropdown--item" href="javascript:void(0)">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--passport">
+                                                        <use xlink:href="images/_sprite.svg#icon--passport"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info c-booking__dropdown--arrow">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Думаете, куда бы съездить?
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Поиск «Куда угодно» покажет все доступные варианты
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--where" data-title="Куда">
+                                        <div class="c-booking__change">
+                                            <svg class="icon icon--change">
+                                                <use xlink:href="images/_sprite.svg#icon--change"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Куда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Милан (MXP)
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--when" data-title="Когда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Когда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar">
+                                                <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                                            </svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--from" data-title="Откуда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Откуда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin">
+                                                        <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin">
+                                                        <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Итальянская Ривьера
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Аэропорт Рим
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Город - Лацио, Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--bed-2">
+                                                        <use xlink:href="images/_sprite.svg#icon--bed-2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Intercontinental Rome
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--monastery">
+                                                        <use xlink:href="images/_sprite.svg#icon--monastery"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Колизей
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--where" data-title="Куда">
+                                        <div class="c-booking__change">
+                                            <svg class="icon icon--change">
+                                                <use xlink:href="images/_sprite.svg#icon--change"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Куда" autocomplete="off" required />
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__dropdown">
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin">
+                                                        <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--pin">
+                                                        <use xlink:href="images/_sprite.svg#icon--pin"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Итальянская Ривьера
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--plane">
+                                                        <use xlink:href="images/_sprite.svg#icon--plane"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Аэропорт Рим
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Город - Лацио, Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--bed-2">
+                                                        <use xlink:href="images/_sprite.svg#icon--bed-2"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Intercontinental Rome
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item">
+                                                <div class="c-booking__dropdown--icon">
+                                                    <svg class="icon icon--monastery">
+                                                        <use xlink:href="images/_sprite.svg#icon--monastery"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="c-booking__dropdown--info">
+                                                    <div class="c-booking__dropdown--location">
+                                                        Колизей
+                                                    </div>
+                                                    <div class="c-booking__dropdown--region">
+                                                        Регион - Италия
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--clone c-booking__column--when" data-title="Когда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Когда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar">
+                                                <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                                            </svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                        <div class="c-booking__remove"></div>
+                                    </div>
+
+
+                                    <div class="c-booking__column c-booking__column--visit" data-title="Туда">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Туда" autocomplete="off" required />
+                                            <svg class="icon icon--calendar">
+                                                <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                                            </svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--leaving" data-title="Обратно">
+                                        <div class="c-booking__input">
+                                            <input type="text" placeholder="Обратно" autocomplete="off" required />
+                                            <svg class="icon icon--calendar">
+                                                <use xlink:href="images/_sprite.svg#icon--calendar"></use>
+                                            </svg>
+                                            <span class="c-booking__input--clear">
+                                                Очистить
+                                            </span>
+                                            <span class="c-booking__input--close"></span>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--add">
+                                        <div class="c-booking__input c-booking__add">
+                                            <svg class="icon icon--more">
+                                                <use xlink:href="images/_sprite.svg#icon--more"></use>
+                                            </svg>
+                                            Добавить перелет
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--passengers" data-title="Пассажиры, класс">
+                                        <div class="c-booking__input">
+                                            <div class="c-booking__input--column">
+                                                <span id="c-booking__count--adult">1</span> взрослый, эконом
+                                            </div>
+                                            <svg class="icon icon--user">
+                                                <use xlink:href="images/_sprite.svg#icon--user"></use>
+                                            </svg>
+                                            <span class="c-booking__input--close">
+                                                Готово
+                                            </span>
+                                        </div>
+                                        <div class="c-booking__dropdown" id="c-booking__count">
+                                            <div class="c-booking__dropdown--header c-booking__dropdown--passengers">
+                                                Пассажиры
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-booking__dropdown--title">
+                                                    Взрослые
+                                                    <small>
+                                                        Старше 16 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--adult"></a>
+                                                    <div class="c-booking__count--value">1</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--adult"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-booking__dropdown--title">
+                                                    Дети
+                                                    <small>
+                                                        От 2 -15 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--default"></a>
+                                                    <div class="c-booking__count--value">0</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--default"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h c-booking__dropdown--pb-10">
+                                                <div class="c-booking__dropdown--title">
+                                                    Младенцы
+                                                    <small>
+                                                        От 2 -15 лет
+                                                    </small>
+                                                </div>
+                                                <div class="c-booking__count">
+                                                    <a class="c-booking__count--minus" href="#c-booking__count--default"></a>
+                                                    <div class="c-booking__count--value">0</div>
+                                                    <a class="c-booking__count--plus" href="#c-booking__count--default"></a>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--header c-booking__dropdown--bt c-booking__dropdown--service">
+                                                Класс обслуживания
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass" checked>
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Эконом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Первый
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Бизнес
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h">
+                                                <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Премиум-эконом
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking--no-pointer c-booking__dropdown--bt-0 c-booking__dropdown--h c-booking__dropdown--pb-10">
+                                                <div class="c-radio">
+                                                    <label class="c-radio__label">
+                                                        <input type="radio" name="serviceClass">
+                                                        <span class="c-radio__icon"></span>
+                                                        <span class="c-radio__title">
+                                                            Разные
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="c-booking__dropdown--item c-booking__dropdown--done">
+                                                Готово
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="c-booking__column c-booking__column--submit">
+                                        <button class="c-button c-button--blue min-1152" type="submit">
+                                            <span class="c-button__inner">
+                                                <svg class="icon icon--search">
+                                                    <use xlink:href="images/_sprite.svg#icon--search"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                        <button class="c-button c-button--blue max-1151" type="submit">
+                                            <span class="c-button__inner">
+                                                Найти билеты
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <label class="c-booking__flights-only c-tab__label c-tab__label--absolute min-1152">
+                                        <input type="checkbox" name="directFlightsOnly">
+                                        <span class="c-tab__label--radio"></span>
+                                        Только рейсы без пересадок
+                                    </label>
+                                    <div class="c-booking__reset c-tab__label--absolute min-1152">
+                                        <svg class="icon icon--clear">
+                                            <use xlink:href="images/_sprite.svg#icon--clear"></use>
+                                        </svg>
+                                        Cбросить все
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-crumb min-1152">
+                    <a class="c-crumb__link" href="javascript:void(0)">
+                        Дешевые авиабилеты
+                    </a>
+                    <div class="c-crumb__separator"></div>
+                    <span class="c-crumb__link c-crumb__link--current">
+                        Все города
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="l-main">
+        <div class="l-container">
+
+            <div class="l-row">
+                <div class="c-crumb max-1151">
+                    <a class="c-crumb__link" href="javascript:void(0)">
+                        Дешевые авиабилеты
+                    </a>
+                    <div class="c-crumb__separator"></div>
+                    <span class="c-crumb__link c-crumb__link--current">
+                        Все города
+                    </span>
+                </div>
+            </div>
+
+            <!-- Дешевые авиабилеты в различные города мира - start -->
+            <div class="l-row l-row--flex l-row--between l-row--align-end l-row--mt-40">
+                <h2 class="c-title c-title--left-max-1151">
+                    Дешевые авиабилеты в различные города мира
+                </h2>
+            </div>
+            <div class="l-row l-row--w-1000 l-row--mt-40">
+                <div class="c-title__text">
+                    На Planetofhotels.com вы найдете самые дешевые авиабилеты в любой город мира. Мы найдем самую низкую цену среди предложений 728 авиакомпаний и крупнейших агентств - это абсолютно бесплатно.
+                </div>
+            </div>
+            <div class="l-row l-row--w-1000 l-row--mt-20 min-768">
+                <div class="c-title__text">
+                    Ниже представлен список городов, доступных для перелета. Вы можете воспользоваться поисковой строкой, введя iata-код или название города, в который хотите найти авиабилеты. Так же вы можете отфильтровать из списка города, в зависимости от действующего в них визового режима и наличия спецпредложений.
+                </div>
+            </div>
+            <div class="l-row l-row--mt-40">
+                <div class="c-alphabet">
+                    <div class="c-alphabet__nav">
+                        <a class="c-alphabet__nav--link c-alphabet__nav--active" href="#c-alphabet__1">А</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__2">Б</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__3">В</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__4">Г</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__5">Д</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__6">Е</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__7">Ж</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__8">З</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__9">И</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__10">Й</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__11">К</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__12">Л</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__13">М</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__14">Н</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__15">О</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__16">П</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__17">Р</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__18">С</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__19">Т</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__20">У</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__21">Ф</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__22">Х</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__23">Ц</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__24">Ш</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__25">Щ</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__26">Ы</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__27">Э</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__28">Ю</a>
+                        <a class="c-alphabet__nav--link" href="#c-alphabet__29">Я</a>
+                    </div>
+                    <div class="c-alphabet__content">
+                        <div class="c-alphabet__content--item c-alphabet__content--active" id="c-alphabet__1">
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                            <a class="c-alphabet__content--link" href="javascript:void(0)">Название города</a>
+                        </div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__2">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__3">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__4">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__5">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__6">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__7">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__8">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__9">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__10">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__11">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__12">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__13">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__14">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__15">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__16">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__17">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__18">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__19">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__20">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__21">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__22">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__23">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__24">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__25">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__26">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__27">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__28">Контент...</div>
+                        <div class="c-alphabet__content--item" id="c-alphabet__29">Контент...</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Дешевые авиабилеты в различные города мира - end -->
+
+
+        </div>
+    </main>
+
+    <footer class="l-footer">
+        <div class="c-subscription">
+            <div class="l-container">
+                <div class="c-subscription__wrap">
+                    <div class="c-subscription__form">
+                        <div class="c-subscription__form--title">
+                            Подписаться на новости
+                        </div>
+                        <form class="c-form c-form--subscription">
+                            <input type="email" placeholder="Ваш e-mail" required>
+                            <button class="c-button" type="submit">
+                                <span class="c-button__inner">
+                                    <svg class="icon icon--submit">
+                                        <use xlink:href="images/_sprite.svg#icon--submit"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                        <div class="c-subscription__form--text">
+                            Конфиденциальность данных гарантируется, от подписки можно
+                            <a class="c-link" href="javascript:void(0)">
+                                отказаться
+                            </a>
+                            в любой момент
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-separator">
+            <div class="l-container">
+                <div class="c-separator__wrap">
+
+                    <nav class="c-nav">
+                        <a class="c-nav__link" href="javascript:void(0)" target="_blank">
+                            Отправить отзыв
+                        </a>
+                        <a class="c-nav__link" href="javascript:void(0)" target="_blank">
+                            Пресс центр
+                        </a>
+                        <a class="c-nav__link" href="javascript:void(0)" target="_blank">
+                            Для инвесторов
+                        </a>
+                        <a class="c-nav__link" href="javascript:void(0)" target="_blank">
+                            Правила и условия
+                        </a>
+                        <a class="c-nav__link" href="javascript:void(0)" target="_blank">
+                            Положение о конфиденциальности и cookie
+                        </a>
+                    </nav>
+
+                    <div class="c-social">
+                        <a class="c-social__link c-social__link--twitter" href="javascript:void(0)" target="_blank">
+                            <svg class="icon icon--twitter">
+                                <use xlink:href="images/_sprite.svg#icon--twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="c-social__link c-social__link--google" href="javascript:void(0)" target="_blank">
+                            <svg class="icon icon--google">
+                                <use xlink:href="images/_sprite.svg#icon--google"></use>
+                            </svg>
+                        </a>
+                        <a class="c-social__link c-social__link--linkedin" href="javascript:void(0)" target="_blank">
+                            <svg class="icon icon--linkedin">
+                                <use xlink:href="images/_sprite.svg#icon--linkedin"></use>
+                            </svg>
+                        </a>
+                        <a class="c-social__link c-social__link--facebook" href="javascript:void(0)" target="_blank">
+                            <svg class="icon icon--facebook">
+                                <use xlink:href="images/_sprite.svg#icon--facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="c-social__link c-social__link--instagram" href="javascript:void(0)" target="_blank">
+                            <svg class="icon icon--instagram">
+                                <use xlink:href="images/_sprite.svg#icon--instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="c-list">
+            <div class="l-container">
+                <div class="c-list__wrap">
+
+                    <div class="c-list__column">
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Популярные достопримечательности
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Базилика Святого Петра
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Римский Колизей
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Стена Плача
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Замок Бран
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Дворец Топкапы
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Отель Бурдж-аль-Араб
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Пирамида Хеопса
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Диснейленд
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Площадь Испании
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Мечеть шейха Зайда
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Базилика Святого Петра
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Собор Мескита
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Тадж-Махал
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Миланский собор
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Атомиум
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Эльфиевая башня
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Статуя свободы
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Рейхстаг
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Сахара
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="c-list__column">
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Популярные города
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Абу-Даби
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Адлер
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Алба-Юлия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Алматы
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Алтай
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Алушта
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Амстердам
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Анапа
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Анталия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Архипелаг Лос-Рокес
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Астрахань
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Афины
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Баган
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Байкал
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Баку
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    о. Бали
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Бангкок
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Барселона
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Батуми
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="c-list__column">
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Популярные страны
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Абхазия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Австралия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Австрия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Азербайджан
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Албания
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Андорра
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Аргентина
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Армения
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Багамы
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Беларусь
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Бельгия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Болгария
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Бразилия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Великобритания
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Венгрия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Венесуэла
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Вьетнам
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Германия
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Греция
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="c-list__column">
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Информация
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    О Planet of Hotels
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Общие вопросы
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Добавить отель
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Вход для отелей
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Вход для клиентов
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Стать партнером
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Контакты
+                                </a>
+                            </div>
+                        </nav>
+
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Туристический гид
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Направления
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Достопримечательности
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Публикации
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Экскурсии
+                                </a>
+                            </div>
+                        </nav>
+
+                        <nav class="c-list__block">
+                            <div class="c-list__title">
+                                Бронирование
+                            </div>
+                            <div class="c-list__group">
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Отели
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Авиабилеты
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Аренда авто
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Страховки
+                                </a>
+                                <a class="c-list__link" href="javascript:void(0)" target="_blank">
+                                    Круизы
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="c-list__column">
+                        <div class="c-list__block c-list__block--subscription">
+                            <div class="c-list__title">
+                                Подписаться на новости
+                            </div>
+                            <div class="c-list__group">
+                                <form class="c-form c-form--subscription">
+                                    <input type="email" placeholder="Ваш e-mail" required>
+                                    <button class="c-button c-button--subscription" type="submit">
+                                        <span class="c-button__inner">
+                                            <svg class="icon icon--submit">
+                                                <use xlink:href="images/_sprite.svg#icon--submit"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </form>
+                                <div class="c-list__text">
+                                    Конфиденциальность данных гарантируется, от подписки можно
+                                    <a class="c-link c-link--fs-12" href="javascript:void(0)" target="_blank">
+                                        отказаться
+                                    </a>
+                                    в любой момент
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="c-select">
+                            <div class="c-select__selected">
+                                Выберитие язык
+                            </div>
+                            <div class="c-select__dropdown">
+                                <div class="c-select__scroll">
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-1
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-2
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-3
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-4
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-5
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-6
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--title">
+                                            Язык-7
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="c-select">
+                            <div class="c-select__selected">
+                                Выберитие валюту
+                            </div>
+                            <div class="c-select__dropdown">
+                                <div class="c-select__scroll">
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            AMD
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Армянский драм
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            AUD
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Австралийский доллар
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            BYN
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Белорусский рубль
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            EUR
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Евро
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            GBP
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Фунт стерлингов Велико­британии
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            KGS
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Киргизский сом
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            KZT
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Казахский тенге
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            RUB
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Российский рубль
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            TJS
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Таджикский сомони
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            TMT
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Туркменский манат
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            UAH
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Украинская гривна
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            USD
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Доллар США
+                                        </div>
+                                    </div>
+                                    <div class="c-select__item">
+                                        <div class="c-select__item--abbr">
+                                            UZS
+                                        </div>
+                                        <div class="c-select__item--title">
+                                            Узбекский сум
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-partner">
+            <div class="l-container">
+                <div class="c-partner__wrap">
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--kiwi">
+                            <use xlink:href="images/_sprite.svg#icon--kiwi"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--viator">
+                            <use xlink:href="images/_sprite.svg#icon--viator"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--tripadvisor">
+                            <use xlink:href="images/_sprite.svg#icon--tripadvisor"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--agoda">
+                            <use xlink:href="images/_sprite.svg#icon--agoda"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--booking">
+                            <use xlink:href="images/_sprite.svg#icon--booking"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--priceline">
+                            <use xlink:href="images/_sprite.svg#icon--priceline"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--rentalcars">
+                            <use xlink:href="images/_sprite.svg#icon--rentalcars"></use>
+                        </svg>
+                    </a>
+                    <a class="c-partner__item" href="javascript:void(0)" rel="nofollow" target="_blank">
+                        <svg class="icon icon--world-nomads">
+                            <use xlink:href="images/_sprite.svg#icon--world-nomads"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-copyright">
+            <div class="l-container">
+                <div class="c-copyright__text">
+                    Copyright © 2013-2018 PlanetOfHotels.com™. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+</body>
+
+</html>

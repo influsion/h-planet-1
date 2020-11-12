@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__parking-sign" width="17" height="17" viewBox="0 0 17 17">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#444f5e}
+        </style>
+    </defs>
+    <g id="prefix__drive-ms-powerpoint">
+        <path id="prefix__Path_182" d="M15.111 0H1.889A1.9 1.9 0 0 0 0 1.889v13.222A1.9 1.9 0 0 0 1.889 17h13.222A1.9 1.9 0 0 0 17 15.111V1.889A1.9 1.9 0 0 0 15.111 0zM6.422 9.822v3.4h-1.7V3.778h4.063a3.3 3.3 0 0 1 2.644.848 2.655 2.655 0 0 1 .852 2.174 2.692 2.692 0 0 1-.852 2.17 3.688 3.688 0 0 1-2.644.756H6.422v.1z" class="prefix__cls-1" data-name="Path 182"/>
+        <path id="prefix__Path_183" d="M173.4 141.249V137.7h2.266a1.721 1.721 0 0 1 1.477.592 1.835 1.835 0 0 1 .495 1.183 1.862 1.862 0 0 1-.495 1.28 1.8 1.8 0 0 1-1.38.495z" class="prefix__cls-1" data-name="Path 183" transform="translate(-167.066 -132.656)"/>
+    </g>
+</svg>

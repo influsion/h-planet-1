@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="16.152" viewBox="0 0 15 16.152">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#444f5e}
+        </style>
+    </defs>
+    <g id="prefix__school-calendar" transform="translate(-12.9)">
+        <g id="prefix__Group_2" data-name="Group 2" transform="translate(12.9)">
+            <g id="prefix__Group_1" data-name="Group 1">
+                <path id="prefix__Path_2" d="M26.784 1.955h-1.228v-.839A1.116 1.116 0 0 0 24.44 0h-.04a1.116 1.116 0 0 0-1.116 1.116v.839h-5.763v-.839A1.116 1.116 0 0 0 16.4 0h-.04a1.116 1.116 0 0 0-1.116 1.116v.839h-1.228A1.116 1.116 0 0 0 12.9 3.071v11.965a1.116 1.116 0 0 0 1.116 1.116h12.768a1.116 1.116 0 0 0 1.116-1.116V3.071a1.116 1.116 0 0 0-1.116-1.116zm-.759 12.433h-11.25V5.326h11.25z" class="prefix__cls-1" data-name="Path 2" transform="translate(-12.9)"/>
+                <path id="prefix__Path_3" d="M85.281 161.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 3" transform="translate(-81.885 -152.491)"/>
+                <path id="prefix__Path_4" d="M155.281 161.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 4" transform="translate(-148.767 -152.491)"/>
+                <path id="prefix__Path_5" d="M225.281 161.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 5" transform="translate(-215.65 -152.491)"/>
+                <path id="prefix__Path_6" d="M85.281 231.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 6" transform="translate(-81.885 -219.373)"/>
+                <path id="prefix__Path_7" d="M155.281 231.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 7" transform="translate(-148.767 -219.373)"/>
+                <path id="prefix__Path_8" d="M225.281 231.93h1.968a.182.182 0 0 0 .181-.181v-1.968a.182.182 0 0 0-.181-.181h-1.968a.182.182 0 0 0-.181.181v1.968a.182.182 0 0 0 .181.181z" class="prefix__cls-1" data-name="Path 8" transform="translate(-215.65 -219.373)"/>
+            </g>
+        </g>
+    </g>
+</svg>
